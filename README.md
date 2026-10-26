@@ -1,4 +1,4 @@
-# IC Risk Screener (Grid Gremlins)
+# IC Risk Screener
 
 A pre-queue "gut check" for PJM solar + storage sites. Describe up to 3 candidate sites in plain English. A small team of AI agents pulls real PJM interconnection history from Berkeley Lab data and returns a red-to-green risk heatmap on five interconnection cost drivers. Every flag links to its source, and each site gets a suggested next step.
 
@@ -9,8 +9,8 @@ A pre-queue "gut check" for PJM solar + storage sites. Describe up to 3 candidat
 Requires Python 3.11+.
 
 ```bash
-git clone https://github.com/tg676/grid-gremlins-ic-screener.git
-cd grid-gremlins-ic-screener
+git clone https://github.com/tg676/ic-risk-screener.git
+cd ic-risk-screener
 python -m venv .venv
 ```
 

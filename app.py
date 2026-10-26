@@ -44,7 +44,7 @@ app.layout = html.Div([
     dcc.Location(id="url"), dcc.Store(id="result"), dcc.Store(id="session-tokens", storage_type="session", data=0),
     html.Header([
         html.Div([html.Div("IC Risk Screener", className="title"),
-                  html.Div("Pre-queue interconnection gut check · PJM solar + storage · Grid Gremlins",
+                  html.Div("Pre-queue interconnection gut check · PJM solar + storage",
                            className="subtitle")]),
         html.Div(id="meters", className="meters"),
     ]),
