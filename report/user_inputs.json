@@ -1,0 +1,5 @@
+{
+  "manual_time": "Our team's estimate, from our experience preparing the AES case, is that a desk screen of one site takes about <b>3 hours</b>, roughly a full morning. Screening our three example sites by hand would take about <b>9 analyst-hours</b>, against about 2 minutes with the app (typing plus a 20-second run). That is roughly a <b>99% reduction in first-pass screening time</b>. The app does not replace full diligence. It decides which sites get it. For an analyst screening 60 candidate sites a month, that is about 180 hours of desk research. If the screen moves the clearly deprioritized third of sites off the list early, about 60 of those hours go back to sites that deserve them.",
+  "slide_manual": "~3 hrs",
+  "slide_manual_note": "per site for today's manual desk screen (team estimate), ≈9 hours for 3 sites"
+}
