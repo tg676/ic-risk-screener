@@ -1,0 +1,716 @@
+q_id,state,county,poi_name,utility,fuel,mw,status,study_year,network_kw,total_kw
+A31,PA,Lackawanna,Peckville/Varden 69 kV,PPL,Natural Gas,46.0,Complete,2000,0.0,18.9
+A35,PA,Northampton,North Bangor 34.5 kV,ME,Natural Gas,10.0,Complete,2000,0.0,29.9
+A02,VA,,Oak Hall 138 kV (Oil CT),DPL,Oil,315.0,Complete,2000,0.0,8.7
+B03,PA,Northampton,Hosensack 500kV,PPL,Natural Gas,788.0,Complete,2001,0.7,60.0
+A19,PA,Delaware,Eddystone 230 kV,PECO,Natural Gas,521.0,Complete,2001,3.3,3.6
+B26,PA,Luzerne,Hunlock Creek 66kV,UGI,Natural Gas,50.0,Complete,2001,0.0,0.0
+B34,PA,Westmoreland,Seward 230kV,PENELEC,Other,525.0,Complete,2002,11.1,34.7
+N13,PA,Beaver,Beaver Valley,DL,Nuclear,1652.0,Complete,2004,0.0,0.0
+K02,PA,Lycoming,East Towanda-Moshannon 230kV,PENELEC,Wind Onshore,70.0,Complete,2005,7.4,7.4
+K13,PA,Somerset,Hooversville 115kV,PENELEC,Wind Onshore,29.4,Complete,2005,134.6,134.6
+L18,PA,Luzerne,Bear Creek,PPL,Wind Onshore,26.0,Complete,2005,0.0,29.1
+P03,PA,Schuylkill,Frackville-Hauto #3,PPL,Wind Onshore,27.3,Complete,2006,0.0,26.4
+O26,PA,Schuylkill,Pine Grove 69kV,PPL,Oil,8.0,Complete,2007,0.0,81.6
+Q70,VA,King And Queen,Lawrenceville 34.5kV,Dominion,Natural Gas,11.0,Complete,2007,16.4,40.3
+Q71,VA,Stafford,Cranes Corner 13.2kV,Dominion,Natural Gas,2.0,Complete,2007,169.7,271.8
+N12,OH,Scioto,North Haverhill 69 kV,AEP,Coal,75.0,Complete,2007,30.9,47.1
+T78,VA,King George,Arnolds Corner 34.5kV,Dominion,Natural Gas,9.8,Complete,2008,11.6,56.8
+T108,PA,Lackawanna,Archbald 69kV,PPL,Natural Gas,9.2,Complete,2008,30.6,30.6
+S40,PA,Schuylkill,Hegins,PPL,Natural Gas,10.5,Complete,2008,6.2,168.5
+Q27,PA,Schuylkill,Frackville-Shennandoah 69kV,PPL,Wind Onshore,100.0,Complete,2008,73.7,79.6
+N32,PA,Fayette,Gans 138kV,APS,Wind Onshore,50.4,Complete,2008,23.6,29.7
+S85,VA,Surry,Surry 230kV,Dominion,Natural Gas,92.0,Complete,2008,7.5,7.5
+S101,OH,Muskingum,Ohio Central 138kV,AEP,Natural Gas,580.0,Complete,2009,0.0,0.0
+U2-013,VA,Henrico,Northeast 34.5kV,Dominion,Natural Gas,8.0,Complete,2009,0.0,25.2
+S100,VA,Wise,Clinch River 138kV,AEP,Coal,614.0,Complete,2009,65.9,76.1
+R49,OH,Paulding,Haviland - Milan 138kV,AEP,Wind Onshore,150.0,Complete,2010,43.5,43.5
+V2-019,PA,Bradford,Mansfield-S. Troy 115kV,PENELEC,Wind Onshore,100.5,Complete,2010,0.0,0.0
+V2-040,VA,Henrico,Mountain Road 34.5kV,Dominion,Natural Gas,4.0,Complete,2010,22.2,68.1
+R60,OH,Van Wert,Convoy-East Lima 345kV,AEP,Wind Onshore,350.0,Complete,2011,6.3,6.3
+W1-054,PA,Lancaster,South Akron-Prince,PPL,Natural Gas,11.4,Complete,2011,26.1,67.5
+X1-084,VA,Campbell,Altavista 115kV,Dominion,Biomass,60.0,Complete,2011,0.0,0.0
+V3-045,OH,Butler,Zimmer-Spurlock 345kV,DEOK,Hydro,112.0,Complete,2012,45.7,45.7
+W2-049,VA,Halifax,Reedy Creek 115kV,Dominion,Biomass,47.4,Complete,2012,76.7,88.4
+X1-038,VA,Franklin,Union Camp 115kV,Dominion,Natural Gas,35.0,Complete,2012,0.0,0.8
+Y1-054,OH,Hamilton,Rochelle 138kV,DEOK,Natural Gas,20.0,Complete,2012,0.0,0.0
+W1-111,PA,Luzerne,Harwood-Berwick 69kV,PPL,Storage,20.0,Complete,2012,47.9,47.9
+S14,PA,Allegheny,Dans Mountain,APS,Wind Onshore,70.0,Complete,2013,15.5,15.5
+U2-015,PA,Columbia,Harwood-E. Palmerton 230kV,PPL,Wind Onshore,100.0,Withdrawn,2013,35.2,35.2
+Y1-068,VA,,East Mill 138kV,Dominion,Biomass,50.0,Complete,2013,0.0,6.9
+U4-001,OH,Richland,Howard 138kV,AEP,Wind Onshore,200.0,Withdrawn,2013,13.8,20.5
+R52A,OH,Champaign,Kings Creek 69kV,Dayton,Wind Onshore,100.0,Withdrawn,2014,12.7,13.3
+W1-045,PA,Franklin,Roxbury 23 kV,PENELEC,Solar,13.5,Complete,2014,12.2,12.2
+Z2-014,PA,Cambria,St. Benedict-Patton,PENELEC,Wind Onshore,30.0,Complete,2014,0.0,0.0
+W1-056,OH,Hardin,Ada-Dunkirk 69kV,AEP,Wind Onshore,66.7,Complete,2014,16.0,16.5
+X4-039,VA,Loudoun,Pleasant View-Brambleton 230kV,Dominion,Natural Gas,800.0,Complete,2014,4.8,4.8
+U4-029,OH,Seneca,Fostoria Central-Greenlawn-Howard 138kV,AEP,Wind Onshore,200.0,Complete,2014,9.7,9.7
+Z1-079,OH,Butler,Todhunter-Foster 345kV,DEOK,Natural Gas,513.0,Complete,2015,26.4,45.2
+Y2-050,OH,Carroll,Tidd_x0013_Canton Central,AEP,Natural Gas,742.0,Complete,2015,0.0,2.8
+AA1-026,VA,,Oak Hall B,DPL,Solar,20.0,Complete,2015,140.2,168.4
+Z2-012,VA,Northampton,Weirwood-Eastville 69kV,ODEC,Solar,20.0,Complete,2015,5.8,28.9
+Z2-108,PA,Somerset,Meyersdale North 115kV,PENELEC,Storage,48.0,Complete,2015,0.0,0.0
+AA1-100,PA,Allegheny,Warrior Run 138kV,APS,Storage,11.0,Complete,2015,1.0,1.0
+AA2-127,VA,Buckingham,Bear Garden 230kV,Dominion,Natural Gas,682.0,Complete,2015,0.0,0.0
+AA1-079,PA,Bucks,Emilie 230kV,PECO,Natural Gas,1342.0,Complete,2015,0.0,0.0
+Z1-086,VA,Greensville,Heritage-Carson,Dominion,Natural Gas,1681.0,Complete,2015,103.2,105.3
+Y3-103,PA,Beaver,Valley-Raccoon 138kV,DL,Natural Gas,205.0,Complete,2015,4.9,8.8
+AA1-066,PA,Luzerne,Susquehanna-Lackawanna 500kV,PPL,Natural Gas,1050.0,Complete,2016,5.5,5.5
+U2-072,OH,Hardin,East Lima-Marysville 345kV,AEP,Wind Onshore,250.0,Complete,2016,4.2,5.7
+T131,OH,Paulding,Lincoln-Sterling  138kV,AEP,Wind Onshore,150.0,Complete,2016,5.7,9.6
+AA1-145,VA,Hanover,Four Rivers 230kV,Dominion,Natural Gas,340.0,Complete,2016,4.9,8.2
+AB2-025,VA,Sussex,Sapony 34.5kV,Dominion,Solar,20.0,Complete,2016,0.0,0.0
+AA2-139,PA,Fayette,Ronco 500kV,APS,Natural Gas,706.0,Complete,2016,0.0,0.0
+AB2-045,VA,Buckingham,Buckingham 34.5kV,Dominion,Solar,19.8,Complete,2016,0.0,0.0
+AB1-015,OH,Trumbull,Evergreen 138kV,ATSI,Natural Gas,16.5,Complete,2016,0.9,0.9
+AB1-144,PA,Clearfield,Shawville 230kV,PENELEC,Natural Gas,590.0,Complete,2016,0.0,0.0
+AC1-087,PA,Carbon,Siegfried-Hauto 69kV,PPL,Solar,10.0,Active,2016,2.9,2.9
+AB1-108,PA,Lackawanna,Lackawanna 500 kV,PPL,Natural Gas,485.0,Withdrawn,2016,358.1,358.1
+AA1-043,PA,Berks,Ontelaunee 230kV,ME,Natural Gas,591.1,Complete,2016,0.0,0.0
+R57,PA,Berks,South Reading 69kV,ME,Biomass,30.0,Complete,2017,20.6,20.6
+L13,PA,Somerset,Rockwood,PENELEC,Wind Onshore,40.0,Complete,2017,21.6,21.6
+Q53,PA,Blair,Summit-West Fall 115kV,PENELEC,Wind Onshore,38.0,Complete,2017,138.7,138.7
+AD1-025,VA,Surry,Hopewell-Surry 230 kV,Dominion,Solar,150.0,Complete,2017,0.1,0.1
+P60,PA,Somerset,New Baltimore 115kV (Stony Creek),PENELEC,Wind Onshore,52.5,Complete,2017,45.9,45.9
+R32,PA,Cambria,Salix - Claysburg 115kV,PENELEC,Wind Onshore,75.0,Complete,2017,5.3,8.9
+AA2-088,VA,Southampton,Boykins-Handsome 115kV,Dominion,Solar,100.0,Complete,2017,83.6,90.3
+P22,PA,Cambria,Johnstown Altoona 230kV,PENELEC,Wind Onshore,20.0,Complete,2017,27.3,30.1
+P28,PA,Wyoming,Mehoopany 115kV,PENELEC,Wind Onshore,150.0,Complete,2017,23.9,23.9
+Q45,PA,Lebanon,North Lebanon 13.2kV,ME,Natural Gas,3.2,Complete,2017,0.0,44.7
+R40,PA,Somerset,Rockwood - Meyersdale 115kV,PENELEC,Wind Onshore,1.8,Complete,2017,712.3,712.3
+Y1-033,PA,Somerset,Penn Mar-Rock Wood 115kV,PENELEC,Wind Onshore,38.3,Complete,2017,49.0,49.0
+O38,PA,Cambria,Johnstown-Altoona 230kV,PENELEC,Wind Onshore,50.0,Complete,2017,0.0,1.5
+AB2-109,VA,Lynchburg,Reusens 34.5kV,AEP,Hydro,12.5,Complete,2017,0.0,0.0
+AC1-021,PA,Westmoreland,Yukon Hatfield 500kV,APS,Natural Gas,1050.0,Complete,2017,9.7,9.7
+AA1-044,PA,Lawrence,Shenango-Hoytdale 345kV,ATSI,Natural Gas,1000.0,Complete,2017,5.2,5.2
+AB2-170,OH,Hardin,East Lima-Marysville 345kV,AEP,Solar,130.0,Active,2017,4.3,21.6
+AC1-064,PA,Franklin,Route 16 34.5kV,APS,Natural Gas,15.0,Complete,2017,1.0,1.0
+AB2-175,PA,York,Peach Bottom 500kV,PECO,Nuclear,2709.8,Complete,2017,13.1,13.1
+AC1-035,PA,Lebanon,Ironwood 230kV,PENELEC,Natural Gas,750.0,Complete,2017,0.0,0.0
+AB1-069,PA,Washington,Wylie Ridge 500kV,APS,Natural Gas,1025.0,Withdrawn,2017,4.9,4.9
+AC2-133,VA,Warren,Warren County 500kV,Dominion,Natural Gas,1484.0,Complete,2017,0.0,0.0
+Q36,PA,Centre,Philipsburg - Tyrone North 115kV,PENELEC,Wind Onshore,50.0,Complete,2017,98.3,98.3
+AB2-074,PA,Snyder,Sunbury #2 500kV,PPL,Natural Gas,1143.0,Active,2017,0.0,0.0
+AB1-092,PA,Clinton,Moshannon-East Towanda 230kV,PENELEC,Natural Gas,504.0,Active,2017,7.8,7.8
+AC2-035,OH,Jackson,Lick-Firebrick 69kV,AEP,Solar,49.0,Withdrawn,2018,29.4,107.7
+AB1-127,PA,Franklin,St. Thomas-Guilford 34.5kV,APS,Solar,20.0,Complete,2018,8.4,11.8
+AC1-162,VA,Prince Edward,Briery-Clover 230kV,Dominion,Solar,240.0,Withdrawn,2018,291.2,299.4
+AA2-133,PA,Bradford,Wyalusing 34.5kV,PENELEC,Natural Gas,19.9,Complete,2018,45.2,58.0
+AC1-167,OH,Defiance,Mark Center 69kV,AEP,Solar,49.9,Complete,2018,8.8,24.2
+AC2-102,VA,Culpeper,Mitchell DP 115kV,Dominion,Solar,80.0,Withdrawn,2018,175.4,196.6
+AB2-083,OH,Ross,Delano 138kV,AEP,Solar,40.0,Withdrawn,2018,12.3,26.0
+AD1-085,VA,Page,North Shenandoah-Stanley 34.5 kV,APS,Solar,20.0,Complete,2018,0.7,0.7
+AB2-068,VA,Charles City,Chickahominy 500kV,Dominion,Natural Gas,1060.0,Withdrawn,2018,10.5,16.8
+AB1-128,PA,Franklin,St. Thomas-Mercersburg 34.5kV,APS,Solar,20.0,Complete,2018,8.4,11.8
+AC2-107,VA,Halifax,Perth 115kV,Dominion,Solar,100.0,Withdrawn,2018,19.7,36.7
+AC1-212,OH,Auglaize,Minster 69kV,Dayton,Storage,19.9,Withdrawn,2018,0.0,0.0
+AD1-078,VA,Orange,Paytes 115 kV,Dominion,Solar,20.0,Withdrawn,2018,0.0,16.4
+AD1-069,PA,Fayette,Iron Bridge-Donegal 138 kV,APS,Wind Onshore,80.0,Withdrawn,2018,111.8,111.8
+AC1-209,PA,York,Pine Grove Solar,PECO,Solar,18.0,Withdrawn,2018,0.0,79.2
+AC1-188,OH,Jackson,Rio-Lick 138kV,AEP,Solar,70.0,Active,2018,31.3,109.6
+AD1-131,VA,Halifax,Sedge Hill-Person 230 kV,Dominion,Solar,70.0,Active,2018,0.0,0.0
+AB2-134,VA,Surry,Hopewell-Surry 230kV,Dominion,Solar,142.4,Complete,2018,65.1,69.9
+AB2-089,VA,Mecklenburg,Beechwood DP-Palmer Springs 115 kV,Dominion,Solar,20.0,Withdrawn,2018,5.2,5.2
+AD1-055,VA,Halifax,Crystal Hill-Halifax 115 kV,Dominion,Solar,64.7,Active,2018,0.0,0.0
+AD1-115,VA,Culpeper,Mountain Run-Mitchell 115 kV,Dominion,Solar,150.0,Active,2018,31.8,31.8
+AC2-130,VA,Chesterfield,Chesterfield 230kV 5,Dominion,Coal,370.0,Complete,2018,0.0,0.0
+AB2-043,VA,Mecklenburg,Chase City 115kV,Dominion,Solar,49.9,Complete,2018,0.0,100.4
+AD1-097,PA,Delaware,Linwood 230 kV II,PECO,Natural Gas,919.0,Active,2018,0.0,0.0
+AC1-063,VA,King And Queen,Shackleford 34.5kV,Dominion,Natural Gas,14.0,Complete,2018,0.0,0.0
+AC2-068,OH,Preble,Camden-Crystal II 69kV,Dayton,Solar,20.0,Active,2018,0.0,0.0
+AC2-048,OH,Meigs,Sporn 138kV,AEP,Solar,60.0,Active,2018,4.6,27.4
+AC1-044,OH,Guernsey,Kammer-Vassell 765kV,AEP,Natural Gas,550.0,Active,2018,12.0,92.3
+AD1-136,OH,Clermont,South Bethel-Brown 69 kV,DEOK,Solar,80.0,Active,2018,72.3,77.8
+AB2-072,VA,King George,Arnold's Corner 34.5kV,Dominion,Solar,18.0,Withdrawn,2018,209.3,222.7
+AD1-060,PA,Franklin,Mercersburg-Milnor 34.5 kV,APS,Solar,15.0,Complete,2018,5.5,5.5
+AD1-088,VA,Mecklenburg,Briery-Clover 230 kV,Dominion,Solar,105.0,Complete,2018,1.0,1.0
+AA1-123,OH,Columbiana,Highland-Sammis 345kV,ATSI,Natural Gas,1152.0,Complete,2018,6.4,6.4
+AE2-229,VA,Suffolk,Suffolk 34 kV,Dominion,Solar,15.0,Withdrawn,2019,0.0,0.0
+AE2-268,VA,Middlesex,Harmony Village 34 kV,Dominion,Solar,15.0,Withdrawn,2019,0.0,0.0
+AE2-125,PA,Westmoreland,Stahlstown-Ligonier 25 kV,APS,Solar,13.8,Complete,2019,3.5,8.2
+AC1-051,OH,Huron,Willard-S. Greenwich 69kV,AEP,Wind Onshore,60.0,Withdrawn,2019,12.9,12.9
+AF1-150,PA,Allegheny,Midfield 22.9 kV,DL,Natural Gas,14.4,Complete,2019,0.0,0.0
+AC2-077,PA,Tioga,Sabinsville 34.5kV,PENELEC,Natural Gas,20.0,Withdrawn,2019,30.8,38.2
+AC1-107,VA,Charles City,Chickahominy 500kV,Dominion,Natural Gas,1600.0,Withdrawn,2019,3.3,5.0
+AB2-161,VA,Sussex,Waverly #2 DP 115kV,Dominion,Solar,50.0,Complete,2019,126.7,137.6
+AC1-076,VA,Orange,Locust Grove-Paytes 115kV,Dominion,Solar,62.5,Complete,2019,125.8,134.3
+AC1-065,VA,King And Queen,Harmony Village-Shackleford 115kV,Dominion,Solar,50.0,Complete,2019,140.4,151.2
+AC1-105,VA,Halifax,Halifax-Mt. Laurel 115kV,Dominion,Solar,51.0,Complete,2019,139.4,150.1
+AC1-165,OH,Pickaway,Atlanta 69kV III,Dayton,Solar,49.9,Complete,2019,19.3,19.3
+AB2-160,VA,Dinwiddie,Reams 115kV,Dominion,Solar,80.0,Active,2019,91.1,97.9
+AC1-145,VA,Pittsylvania,Gretna DP 69 kV,Dominion,Solar,50.0,Complete,2019,148.1,159.3
+AC2-067,OH,Preble,Camden-Crystal I 69kV,Dayton,Solar,49.9,Complete,2019,7.9,9.3
+AE2-055,PA,Centre,Shingletown-Boalsburg 46 kV,APS,Solar,20.0,Complete,2019,2.4,3.6
+AC1-085,OH,Highland,Stuart-Clinton 345kV,Dayton,Solar,400.0,Complete,2019,17.5,17.5
+AE2-114,PA,Beaver,Midland 23 kV I,DL,Solar,17.1,Complete,2019,0.0,0.0
+AC1-089,OH,Highland,Hillsboro-Wildcat 138kV,AEP,Solar,150.0,Complete,2019,28.7,28.7
+AD1-154,PA,Jefferson,Timblin 34.5 kV,PENELEC,Natural Gas,20.0,Withdrawn,2019,68.5,84.9
+AB1-182,PA,Luzerne,Bear Creek,PPL,Storage,20.0,Active,2019,13.5,54.1
+AE2-115,PA,Beaver,Midland 23 kV II,DL,Solar,17.1,Complete,2019,0.0,0.0
+AE2-274,PA,Carbon,Siegfried-Hauto 69 kV,PPL,Solar,20.0,Complete,2019,1.4,1.4
+AE2-054,PA,Franklin,Warfordsburg 34 kV,APS,Solar,20.0,Complete,2019,2.4,3.6
+AC1-173,OH,Paulding,Logtown 138kV,AEP,Wind Onshore,75.9,Complete,2019,10.5,17.9
+V1-011,OH,Paulding,Haviland 138kV,AEP,Wind Onshore,100.0,Complete,2019,0.0,17.9
+AE2-116,PA,Adams,Midland 23 kV III,DL,Solar,20.0,Withdrawn,2019,0.0,0.0
+AC1-166,OH,Pickaway,Atlanta 69kV IV,Dayton,Solar,49.9,Complete,2019,26.2,26.2
+AC2-053,PA,Adams,Germantown 115kV,ME,Solar,55.0,Complete,2019,23.0,23.0
+AD1-081,OH,Madison,Beatty-London 138 kV,ATSI,Solar,196.0,Active,2019,0.2,0.2
+AC1-068,OH,Pickaway,Atlanta 69kV I,Dayton,Solar,49.9,Complete,2019,36.3,36.3
+AC1-069,OH,Pickaway,Atlanta 69kV II,Dayton,Solar,49.9,Complete,2019,20.0,20.0
+AB1-107,OH,Lucas,Bayshore-GM Powertrain 138 kV & Lallendorf 345kV,ATSI,Natural Gas,955.0,Active,2019,6.8,7.6
+AE2-225,VA,Suffolk,Suffolk 34 kV,Dominion,Solar,20.0,Withdrawn,2019,0.0,0.0
+AC1-080,VA,Halifax,Perth-Hickory Grove 115kV,Dominion,Solar,20.0,Complete,2019,77.1,222.1
+AC1-158,VA,Spotsylvania,Spotsylvania 500kV,Dominion,Solar,500.0,Complete,2019,5.5,13.6
+AC2-092,PA,Luzerne,Susquehanna-Lackawanna 500kV,PPL,Natural Gas,1105.0,Active,2019,0.0,0.0
+AB2-190,VA,Prince George,Hopewell-Surry 230kV,Dominion,Solar,160.0,Complete,2019,79.8,83.6
+AB2-158,VA,Louisa,Louisa-South Anna 230kV,Dominion,Solar,88.2,Complete,2019,186.3,193.8
+AC1-151,PA,Luzerne,Harwood-Berwick 69kV,PPL,Solar,20.0,Withdrawn,2019,30.7,59.3
+AB2-100,VA,Greensville,Clubhouse-Lakeview 230kV,Dominion,Solar,100.0,Complete,2019,80.8,86.7
+AB2-060,VA,Mecklenburg,Chase City-Lunenburg 115kV,Dominion,Solar,80.0,Complete,2019,89.9,96.8
+AB2-093,OH,Monroe,Ormet 138kV,AEP,Natural Gas,485.0,Complete,2019,27.5,27.5
+AE2-241,PA,Columbia,Bloomsburg-Columbia 69 kV,PPL,Solar,20.0,Active,2020,6.1,50.2
+AE2-108,VA,Hanover,Kings Dominion DP 115 kV,Dominion,Solar,20.0,Withdrawn,2020,304.6,304.6
+AF1-333,PA,Union,Laurelton-Mifflinburg 69 kV,PPL,Solar,20.0,Active,2020,29.6,68.1
+AF1-093,PA,Mercer,Henderson-Stoneboro 69 kV,ATSI,Solar,20.0,Active,2020,45.8,59.2
+AF1-321,PA,Somerset,Hooversville 115 kV I,PENELEC,Solar,20.0,Active,2020,61.3,77.3
+AF1-254,PA,Franklin,Milnor-Huyetts 34.5 kV,APS,Solar,20.0,Active,2020,36.2,38.2
+AF1-334,PA,Berks,Northkill 69 kV,ME,Solar,20.0,Withdrawn,2020,77.1,90.0
+AF1-240,PA,Armstrong,Timblin 34.5 kV,PENELEC,Solar,20.0,Active,2020,59.1,76.5
+AF1-336,PA,Berks,Northkill 69 kV,ME,Solar,20.0,Withdrawn,2020,412.3,425.2
+AF1-337,PA,Union,Laurelton-Mifflinburg 69 kV,PPL,Solar,20.0,Active,2020,0.0,0.0
+AE2-080,VA,Surry,Poolesville 34.5 kV,Dominion,Solar,20.0,Withdrawn,2020,0.0,0.0
+AF1-225,PA,Franklin,Milnor 34.5 kV,APS,Solar,20.0,Active,2020,46.7,67.2
+AF1-338,PA,Union,Laurelton-Mifflinburg 69 kV,PPL,Solar,20.0,Active,2020,0.0,0.0
+AF1-134,PA,Clearfield,Philipsburg-Madera 34.5 kV,PENELEC,Solar,20.0,Active,2020,7.7,10.0
+AF1-112,PA,Centre,Centre Hall-Boalsburg 46 kV,APS,Solar,20.0,Active,2020,898.0,901.8
+AF1-094,PA,Crawford,Union City-Cambridge Springs 34.5 kV,PENELEC,Solar,20.0,Active,2020,20.2,26.2
+AF1-339,PA,Union,Laurelton-Mifflinburg 69 kV,PPL,Solar,20.0,Active,2020,0.0,0.0
+AF1-155,PA,Elk,Paper City-Wilcox 46 kV,APS,Solar,20.0,Active,2020,10.2,13.2
+AF1-153,PA,Elk,Motion-Ridgeway 46 kV,APS,Solar,20.0,Active,2020,20.8,27.0
+AF1-096,PA,Crawford,Titusville-Oil Creek 34.5 kV,PENELEC,Solar,20.0,Active,2020,6.7,8.7
+AE2-111,PA,Snyder,Beavertown Tap-Beavertown Weaving Tap 69kV,PPL,Solar,20.0,Complete,2020,12.7,46.0
+AE2-046,PA,Schuylkill,Harwood-East Hazelton 69 kV,PPL,Solar Hybrid,50.0,Active,2020,3.4,3.4
+AF1-064,OH,Wood,Weston 69 kV,ATSI,Solar,50.0,Active,2020,70.7,91.5
+AE2-298,OH,Van Wert,Cavett Switch - West Van Wert 69 kV,AEP,Solar,50.0,Active,2020,116.0,126.6
+AE2-267,OH,Butler,Woodsdale 345 kV,DEOK,Solar,49.0,Active,2020,0.1,66.7
+AE2-047,VA,Henry,Ridgeway-Solite 69 kV,AEP,Solar,50.0,Active,2020,116.0,126.6
+AE2-191,PA,Butler,Saxonburg 138 kV,APS,Solar,52.0,Withdrawn,2020,57.4,57.4
+AF1-297,PA,Greene,North Longview 500 kV,APS,Solar,52.8,Withdrawn,2020,86.4,91.9
+AE2-216,OH,Hardin,Hardin Switch 345 kV,AEP,Storage,55.0,Active,2020,1.0,1.0
+AF1-232,PA,Somerset,Allegheny-Somerset 115 kV,PENELEC,Solar Hybrid,160.0,Withdrawn,2020,235.2,249.1
+AF1-323,VA,Albemarle,Scottsville-Colleen 138 kV,AEP,Solar,55.0,Active,2020,319.6,334.6
+AF1-319,OH,Union,Honda Marysville Tap 69 kV,Dayton,Solar,58.0,Active,2020,30.7,31.0
+AF1-315,OH,Clermont,Cedarville-Ford 138 kV,DEOK,Solar,60.0,Withdrawn,2020,153.0,160.5
+AF1-271,PA,Butler,Keisters-Krendale 138 kV,APS,Solar,60.0,Withdrawn,2020,127.1,164.4
+AF1-115,VA,Surry,Poolesville 230 kV,Dominion,Solar,60.0,Withdrawn,2020,156.4,193.7
+AE2-215,PA,Perry,Blain 115 kV,PENELEC,Solar,60.0,Withdrawn,2020,352.2,356.5
+AE2-322,OH,Defiance,Mark Center 69 kV,AEP,Solar,60.0,Active,2020,0.0,0.0
+AF1-122,OH,Morrow,Cardington-Liberty 69 kV,ATSI,Solar,64.0,Active,2020,132.2,136.6
+AE2-192,PA,Adams,Orrtanna 115 kV,ME,Solar,65.0,Withdrawn,2020,13.8,17.8
+AF1-307,PA,Indiana,Seward-Jackson Rd 115 kV,PENELEC,Solar,66.5,Withdrawn,2020,179.9,214.4
+AE2-133,PA,Snyder,Penns Tap-Richfield Tie 69 kV,PPL,Solar,20.0,Complete,2020,6.1,82.1
+AE2-252,PA,Cumberland,Gardners-Mountain 115 kV,ME,Solar,20.0,Withdrawn,2020,371.1,384.0
+AE2-110,PA,Columbia,Columbia-West Bloomsburg 69 kV,PPL,Solar,20.0,Complete,2020,3683.0,3728.5
+AE2-084,PA,Montour,Derry Tap-Derry Bus 69 kV,PPL,Solar,20.0,Active,2020,12.7,38.9
+AE2-060,PA,Juniata,Mifflintown Bus-Mifflintown Tap 69 kV,PPL,Solar,20.0,Complete,2020,12.7,34.9
+AE2-059,PA,Northumberland,Derry Tap-Derry Bus 69 kV,PPL,Solar,20.0,Complete,2020,12.7,38.9
+AF1-063,OH,Defiance,Lockwood Road 138 kV,AEP,Solar,30.0,Active,2020,58.5,86.4
+AE2-306,OH,Hardin,Gunn Road 345 kV,AEP,Solar,30.0,Complete,2020,70.9,127.7
+AF1-309,PA,Adams,North Hanover 115 kV,ME,Solar,32.0,Withdrawn,2020,29.5,38.1
+AF1-305,PA,Mercer,Maysville-Masury 138 kV,ATSI,Solar Hybrid,35.0,Withdrawn,2020,450.7,524.8
+AE2-277,PA,Mercer,McDowell 138 kV,ATSI,Solar,38.2,Withdrawn,2020,47.2,58.2
+AE2-188,VA,Culpeper,Mitchell DP-Mountain Run 115 kV,Dominion,Storage,40.0,Withdrawn,2020,157.1,157.1
+AF1-205,OH,Henry,Napoleon Muni 138 kV,AMPT,Solar,40.0,Active,2020,52.7,53.0
+AF1-294,VA,Amelia,Jetersville-Ponton 115 kV,Dominion,Solar,41.0,Active,2020,458.5,502.7
+AE2-231,VA,Caroline,St. Johns 115 kV,Dominion,Solar,44.0,Active,2020,352.2,393.3
+AE2-302,OH,Jackson,East Beaver-Lick 138 kV,AEP,Solar,49.9,Active,2020,165.2,181.2
+AF1-226,PA,Columbia,Bowmans Mill-Scott 69 kV,PPL,Solar,35.0,Active,2020,9.7,34.4
+AF1-068,PA,Centre,Boalsburg-Centre Hall 46 kV,APS,Solar,20.0,Withdrawn,2020,5996.8,6009.0
+AF1-149,PA,Centre,Graymont-Zion 46 kV,APS,Solar,20.0,Withdrawn,2020,765.1,769.7
+AB1-105,OH,Trumbull,Highland-Hanna 345kV,ATSI,Natural Gas,940.0,Complete,2020,7.0,7.0
+AF2-268,PA,Adams,Orrtanna 13.2 kV,ME,Solar Hybrid,2.0,Active,2020,133.2,172.3
+AF2-432,PA,Columbia,University 12.47 kV,PPL,Solar Hybrid,2.0,Complete,2020,0.0,0.0
+AF2-290,PA,Montour,Derry 12.47 kV,PPL,Solar Hybrid,2.0,Complete,2020,0.0,0.0
+AF2-284,PA,Northumberland,Watson 12.47 kV,PPL,Solar Hybrid,2.0,Complete,2020,0.0,0.0
+AF2-283,PA,Lackawanna,Greenfield 12.47 kV,PPL,Solar Hybrid,2.0,Complete,2020,0.0,0.0
+AF2-277,PA,Bucks,Richland 12.47 kV,PPL,Solar Hybrid,2.0,Complete,2020,0.0,0.0
+AF2-278,PA,Dauphin,Halifax 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-272,PA,Blair,Bernville 13.2 kV,ME,Solar Hybrid,3.0,Active,2020,128.6,166.3
+AF2-271,PA,Blair,Pemberton-Sinking Valley 12.47 kV,PENELEC,Solar Hybrid,3.0,Active,2020,38.3,49.5
+AF2-430,PA,Berks,Moselem 13.2 kV,ME,Solar Hybrid,3.0,Active,2020,112.0,144.8
+AF2-428,PA,Berks,West Boyertown 13.2 kV,ME,Solar Hybrid,3.0,Active,2020,112.5,145.5
+AF2-427,PA,Northumberland,Watson 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-289,PA,Northumberland,Watson 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-288,PA,Perry,Benvenue 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-287,PA,Perry,Green Park 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-286,PA,Perry,Shermansdale 12.47 kV,PPL,Solar Hybrid,3.0,Withdrawn,2020,0.0,0.0
+AF2-285,PA,Wayne,W. Damascus 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AF2-282,PA,Lackawanna,Edelle 12.47 kV,PPL,Solar Hybrid,3.0,Withdrawn,2020,0.0,0.0
+AF2-281,PA,Lehigh,Lynnville 13.2 kV,ME,Solar Hybrid,3.0,Active,2020,113.0,146.2
+AF2-280,PA,Lancaster,Buck 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AA2-161,PA,Allegheny,Yukon-Robbins 138kV,APS,Natural Gas,541.0,Complete,2020,27.7,28.7
+AC2-112,VA,Augusta,Stuarts Draft-Waynesboro 115kV,Dominion,Solar,150.0,Complete,2020,46.1,49.5
+AC2-165,VA,Powhatan,Bremo-Powhatan 230kV,Dominion,Solar,99.9,Active,2020,80.4,87.1
+X2-076,VA,Brunswick,Carson-Wake 500kV,Dominion,Natural Gas,1525.5,Complete,2020,60.9,62.1
+A36,PA,Adams,Hunterstown 500 kV,ME,Natural Gas,830.0,Complete,2020,7.1,21.2
+AE2-149,OH,Pickaway,Biers Run-Bixby 345 kV,AEP,Solar Hybrid,400.0,Active,2020,26.3,30.6
+AE2-271,PA,Montour,Montour 230 kV,PPL,Solar,101.6,Active,2020,657.8,657.8
+O18,PA,Somerset,Salix-Claysburg (Krayn) 115kV,PENELEC,Wind Onshore,65.0,Complete,2020,30.4,30.4
+AF1-164,OH,Allen,Southwest Lima 345 kV,AEP,Solar,300.0,Active,2020,8.6,12.6
+AF2-279,PA,Lancaster,Letort 12.47 kV,PPL,Solar Hybrid,3.0,Complete,2020,0.0,0.0
+AE2-094,VA,Sussex,Carson-Rogers Road 500 kV,Dominion,Solar Hybrid,300.0,Active,2020,611.9,621.6
+Z1-035,OH,,Lake Road 11.5 kV,ATSI,Wind Offshore,18.0,Withdrawn,2020,0.0,0.0
+AF1-129,VA,Chesterfield,Chesterfield 230 kV,Dominion,Natural Gas,569.0,Active,2020,4.5,8.4
+AD1-143,PA,Carbon,Hauto-Siegfried 69 kV,PPL,Wind Hybrid,90.0,Active,2020,21.5,34.6
+AD1-041,VA,Gloucester,Harmony Village-Shackleford 115 kV,Dominion,Solar,50.0,Complete,2020,156.4,167.7
+AC2-088,OH,Clermont,S. Bethel-Brown 69kV,DEOK,Solar,70.0,Complete,2020,19.7,20.2
+AC1-120,VA,Culpeper,Mitchell-Mountain Run 115kV,Dominion,Solar,60.0,Complete,2020,122.7,131.4
+AC1-216,VA,Surry,Hopewell-Surry 230kV,Dominion,Solar,97.9,Complete,2020,6.7,13.4
+AF1-128,VA,Chesterfield,Chesterfield 230 kV,Dominion,Natural Gas,569.0,Active,2020,83.4,87.3
+AF1-132,PA,Centre,Shingletown-Boalsburg 46 kV,APS,Solar,20.0,Withdrawn,2020,4563.6,4567.3
+AF2-276,PA,Franklin,Guilford 12.47 kV,APS,Solar Hybrid,3.0,Active,2020,30.4,39.4
+AF2-274,PA,Fayette,Lardin 12.47 kV,APS,Solar Hybrid,3.0,Active,2020,99.3,128.4
+AF1-039,PA,Somerset,Listonburg-Highpoint 24.9 kV,PENELEC,Solar,15.0,Complete,2020,12.0,15.5
+AF1-032,VA,Suffolk,Suffolk 34.5 kV,Dominion,Solar,15.0,Complete,2020,0.0,0.0
+AF1-165,PA,Lebanon,Campbelltown-Millars Quarry 69 kV,ME,Solar,15.0,Active,2020,54.0,129.2
+AF1-210,PA,Clarion,Burma 23 kV,APS,Solar,15.9,Active,2020,6.1,14.9
+AF1-209,PA,Franklin,Guilford 34.5 kV,APS,Solar,15.9,Active,2020,23.2,30.0
+AF1-166,PA,Franklin,Target-Chambers No.5 34.5 kV,APS,Solar,16.0,Active,2020,9.1,11.8
+AE2-248,PA,Centre,Fillmore-Thompson Farm 46 kV,APS,Solar,16.0,Complete,2020,0.0,0.0
+AF1-140,PA,Adams,Claysburg 23 kV,PENELEC,Solar,16.3,Active,2020,0.0,0.0
+AF1-271A,PA,Dauphin,Gratz 69 kV,PPL,Solar,17.0,Active,2020,19.5,60.6
+AE2-204,OH,Stark,Bolivar 34.5 kV,AEP,Solar,19.3,Active,2020,44.1,44.1
+AE2-195,OH,Stark,East Canton-Robertsville 69 kV,AEP,Solar,19.7,Active,2020,294.3,321.3
+AF1-106,PA,Bradford,East Sayre 34.5 kV,PENELEC,Solar Hybrid,20.0,Active,2020,81.3,101.2
+AF1-040,PA,Dauphin,Gratz Tap 69 kV,PPL,Storage,20.0,Active,2020,18.4,70.1
+AF1-104,PA,Erie,Erie West 34.5 kV,PENELEC,Solar Hybrid,20.0,Active,2020,61.4,79.5
+AF1-103,PA,Warren,Warren 34.5 kV,PENELEC,Solar Hybrid,20.0,Active,2020,100.7,103.5
+AF1-214,PA,Centre,Nittany-Zion 46 kV,APS,Solar,20.0,Withdrawn,2020,989.4,994.1
+AF1-171,PA,Crawford,Jamestown-Hartstown 69 kV,ATSI,Solar,20.0,Withdrawn,2020,359.0,370.7
+AF1-292,VA,Greensville,Fields 34.5kV,Dominion,Solar,14.9,Active,2020,0.0,0.0
+AF1-021,PA,Fayette,Bethelboro-Connellsville #1 25 kV,APS,Solar,14.0,Complete,2020,18.6,24.0
+AF1-022,PA,Fayette,Lake Lynn-Uniontown 25 kV,APS,Solar,14.0,Complete,2020,18.6,24.0
+AF1-286,PA,Bradford,East Sayre 34.5 kV II,PENELEC,Solar,13.6,Active,2020,19.9,23.7
+AF2-273,PA,Clarion,Sligo 25 kV,APS,Solar Hybrid,4.0,Withdrawn,2020,0.0,0.0
+AF2-093,PA,Montour,Derry 12.47 kV,PPL,Solar,3.0,Withdrawn,2020,1110.7,1211.8
+AF2-101,PA,Cumberland,Allen 13.2 kV,ME,Solar,3.0,Active,2020,89.2,115.3
+AF2-100,PA,York,Taxville 1 13.2 kV,ME,Solar,3.0,Active,2020,89.3,115.4
+AF2-099,PA,York,Taxville 2 13.2 kV,ME,Solar,3.0,Active,2020,89.3,115.4
+AF2-161,PA,Cumberland,Mount Rock 12.47 kV,PPL,Solar,3.0,Active,2020,17.7,49.6
+AF2-151,PA,York,Dillsburg 13.2 kV,ME,Solar,3.0,Active,2020,88.8,114.9
+AE2-230,VA,Frederick,Bartonsville-Meadow Brook 138 kV,APS,Solar,70.0,Complete,2020,131.3,136.0
+AF2-230,PA,Montgomery,Lock 34 kV,PECO,Solar,4.0,Withdrawn,2020,169.7,219.4
+AF1-061,PA,Franklin,Fayetteville 12.47 kV,APS,Solar,4.0,Withdrawn,2020,344.9,446.0
+AF2-275,PA,Franklin,Guilford 12.47 kV,APS,Solar Hybrid,3.0,Active,2020,20.0,25.9
+AF1-243,VA,Accomack,Tasley 25 kV,ODEC,Storage,5.0,Withdrawn,2020,5047.0,5047.0
+AF2-131,PA,York,Cooper 34.5 kV,PECO,Solar,5.0,Withdrawn,2020,207.3,268.1
+AF2-215,PA,Franklin,Saint Thomas-LeMasters Junction 34.5 kV,APS,Solar,5.0,Active,2020,153.6,198.7
+AE2-109,VA,Hanover,Kings Dominion DP 115 kV,Dominion,Solar,7.0,Withdrawn,2020,468.5,468.5
+AF2-368,PA,Allegheny,Pine Creek 23 kV,DL,Hydro,9.5,Complete,2020,0.0,0.0
+AF1-137,PA,Chester,Newlinville 34.5 kV,PECO,Solar,9.8,Complete,2020,63.8,82.5
+AF2-367,PA,Allegheny,Neville 23 kV,DL,Hydro,12.0,Complete,2020,0.0,0.0
+AF2-231,PA,Mifflin,Belleville 12.47 kV,PENELEC,Solar,5.0,Withdrawn,2020,253.5,327.8
+AF1-067,VA,Caroline,Kings Dominion DP 115 kV,Dominion,Solar Hybrid,50.0,Active,2020,0.0,0.0
+AF1-201,VA,Gloucester,Hayes-White Marsh 115 kV,Dominion,Solar Hybrid,150.0,Active,2020,63.2,75.3
+AF1-311,PA,Montour,Montour 230 kV,PPL,Solar,150.0,Active,2020,16.1,18.4
+AE2-072,OH,Putnam,East Leipsic-Richland 138 kV,AEP,Solar,150.0,Active,2020,51.4,56.7
+AE2-136,OH,Fairfield,Muskingum River-W. Millersport 345 kV,AEP,Solar Hybrid,114.0,Active,2020,0.0,0.0
+AF1-133,PA,Northampton,Pequest River-Richmond 34.5 kV,ME,Solar,20.0,Complete,2020,8.8,15.2
+AC1-122,VA,Campbell,Smith Mountain-Candler's Mountain 138kV,AEP,Solar,60.0,Complete,2020,6.6,7.1
+AF1-335,PA,Berks,Northkill 230 kV,ME,Solar,101.2,Withdrawn,2020,75.8,98.1
+AE2-140,VA,Henry,Axton-Danville 138 kV,AEP,Solar,201.1,Active,2020,110.3,118.2
+AF1-287,PA,Crawford,Edinboro South 34.5 kV II,PENELEC,Solar,20.0,Complete,2020,37.4,48.4
+AB2-174,VA,Greensville,Emporia-Trego 115kV,Dominion,Solar,80.0,Complete,2020,110.8,117.6
+AF1-279,OH,Lorain,Carlisle 138 kV,ATSI,Solar Hybrid,150.0,Active,2020,6.9,8.9
+AF1-143,PA,Somerset,Lick Run 115 kV,PENELEC,Solar,100.0,Active,2020,117.4,117.5
+AF1-301,VA,Louisa,Louisa-South Anna 230 kV,Dominion,Solar,127.0,Active,2020,407.1,424.6
+AB2-131,OH,Marion,Galion-Roberts South 138kV,ATSI,Solar,150.0,Withdrawn,2020,76.6,79.4
+AF1-031,VA,Caroline,Kings Dominion DP 115 kV,Dominion,Solar,93.5,Withdrawn,2020,221.5,221.5
+AF1-282,OH,Highland,Stuart-Clinton 345 kV,Dayton,Solar,100.0,Active,2020,186.9,187.1
+AE2-295,PA,Schuylkill,Eldred 230 kV,PPL,Wind Onshore,174.8,Withdrawn,2020,340.3,340.3
+AF1-206,OH,Fulton,East Fayette 138 kV,ATSI,Solar,199.0,Active,2020,82.8,85.9
+AA2-182,PA,Snyder,Sunbury #2 500kV,PPL,Natural Gas,1030.0,Withdrawn,2020,148.9,154.4
+AE2-157,VA,Sussex,Wakefield_x0013_Waverly 115 kV,Dominion,Solar,100.0,Withdrawn,2020,670.9,688.9
+AF1-272,PA,Indiana,Lucerne 115 kV,PENELEC,Solar,110.0,Active,2020,126.3,146.2
+AE2-262,PA,Centre,Moshannon-Milesburg 230 kV,APS,Solar,83.6,Active,2020,164.8,169.0
+AF1-283,OH,Highland,Stuart-Clinton 345 kV,Dayton,Solar,130.0,Active,2020,120.8,120.9
+AF1-217,PA,Crawford,Edinboro -Cambridge Springs 34.5 kV,PENELEC,Solar,20.0,Active,2020,6.7,8.7
+AF1-114,VA,King George,Oak Grove-Dahlgren 230 kV,Dominion,Solar,100.0,Active,2020,109.3,131.7
+AE2-166,VA,Henry,Stockton 138 kV,AEP,Solar,90.0,Active,2020,85.7,94.6
+AE2-048,OH,Fairfield,Muskingum-W. Millersport 345 kV,AEP,Solar Hybrid,220.0,Active,2020,47.9,55.6
+AF1-229,OH,Wyandot,Galion-South Berwick 345 kV,AEP,Solar,120.0,Active,2020,166.4,176.0
+AE2-344,PA,Crawford,Edinboro South-Venango Junction 115 kV,PENELEC,Solar,116.5,Active,2020,73.8,76.5
+AC2-100,VA,Halifax,Halifax-Person 230kV,Dominion,Solar,50.0,Complete,2020,158.9,170.6
+AF1-174,PA,Chester,Newlinville 34.5 kv II,PECO,Solar,20.0,Complete,2020,32.9,42.5
+AC1-042,VA,Pittsylvania,Altavista-Mt. Airy 69kV,Dominion,Solar,42.0,Complete,2020,27.6,103.7
+AF1-144,OH,Franklin,Hayden 345 kV,AEP,Solar,100.0,Active,2020,28.5,40.3
+AF1-113,OH,Auglaize,Gristmill 345 kV,AEP,Solar Hybrid,180.0,Active,2020,15.6,22.2
+AC1-164,VA,Charles City,Chickahominy 230kV,Dominion,Solar,320.0,Complete,2020,5.5,10.7
+AE2-129,PA,Clearfield,Philipsburg-Clarence 34.5 kV,PENELEC,Solar,20.0,Complete,2020,0.0,9.7
+AE2-320,OH,Pickaway,Atlanta 69 kV II,Dayton,Solar,100.0,Active,2020,446.5,446.5
+AF1-049,VA,Pittsylvania,Berry Hill 138 kV,AEP,Solar,125.0,Active,2020,6.2,12.8
+AF1-076,OH,Allen,Southwest Lima 138 kV,AEP,Solar,100.0,Active,2020,7.7,16.1
+AE2-214,OH,Franklin,Cole 345 kV,AEP,Solar,200.0,Active,2020,17.0,25.5
+AC2-078,VA,Prince George,Disputanta-Waverly 115kV,Dominion,Solar,60.0,Withdrawn,2020,132.9,141.5
+AC2-079,VA,Isle Of Wight,Ivor-Oak Ridge 115kV,Dominion,Solar,85.0,Complete,2020,91.7,97.9
+AE2-196,VA,Wythe,Mt. Airy-Wythe 138 kV,AEP,Solar,94.6,Withdrawn,2020,78.7,87.2
+AC1-143,VA,Culpeper,Brandy-Remington 115kV,Dominion,Solar,60.0,Active,2020,121.4,130.3
+AC1-161,VA,Isle Of Wight,Septa 500kV,Dominion,Solar,240.0,Complete,2020,18.0,29.3
+AC1-222,VA,Halifax,Crystal Hill-Halifax 115kV,Dominion,Solar,44.7,Active,2020,143.1,154.7
+AD1-087,VA,Halifax,Clover-Sedge Hill 230 kV,Dominion,Solar,64.2,Complete,2020,21.9,21.9
+AE2-176,OH,Erie,Groton 138 kV Solar,ATSI,Solar,125.0,Active,2020,9.3,11.8
+AF1-062,OH,Licking,Jug Street 138 kV,AEP,Storage,200.0,Active,2020,3.6,7.8
+AC1-221,VA,Halifax,Halifax-Person 230kV,Dominion,Solar,29.2,Active,2020,241.9,264.3
+AE2-175,PA,Monroe,Jackson-Long Pond 69 kV,PPL,Solar,80.0,Active,2020,1.5,10.0
+AF1-059,VA,Mecklenburg,Brodnax-South Hill 115 kV,Dominion,Solar Hybrid,99.2,Active,2020,679.9,698.1
+AE2-031,VA,Sussex,Carson-Rawlings 500 kV,Dominion,Solar,290.0,Withdrawn,2020,1007.7,1017.8
+AE2-313,VA,Dinwiddie,Carson-Rawlings 500 kV,Dominion,Solar,314.0,Active,2020,815.8,825.1
+AF1-273,PA,Somerset,Allegheny 115 kV,PENELEC,Solar,85.0,Withdrawn,2020,274.1,305.5
+AF1-228,OH,Madison,Beatty-Greene 345 kV,AEP,Solar,155.0,Active,2020,143.4,150.9
+AF1-098,PA,Erie,Four Mile Jct-Corry East 115 kV,PENELEC,Solar,80.0,Active,2020,185.4,213.7
+AF1-304,PA,Venango,Titusville-Grandview 115 kV,PENELEC,Solar Hybrid,100.0,Active,2020,388.5,414.3
+AF1-246,VA,Charlotte,Clover-Rawlings 500 kV,Dominion,Solar,100.0,Active,2020,791.9,821.2
+AF1-085,OH,Auglaize,Southwest Lima-West Moulton 138 kV,AEP,Solar,77.0,Active,2020,123.0,128.3
+AF1-170,PA,Crawford,Springboro-Venango Junction 115 kV,PENELEC,Solar,77.5,Active,2020,223.0,256.6
+AF1-117,OH,Ross,Atlanta-Stuart 345 kV,AEP,Solar Hybrid,200.0,Active,2020,272.8,278.5
+AE2-305,OH,Champaign,Givens-Mechanicsburg 138 kV,Dayton,Solar,78.0,Active,2020,52.5,52.5
+AF2-240,PA,Bradford,North Orwell 12.47 kV,PENELEC,Solar,7.0,Withdrawn,2021,84.4,109.2
+AF2-405,PA,Bradford,East Sayre 34.5 kV III,PENELEC,Storage,10.0,Active,2021,71.6,92.6
+AD1-155,VA,Frederick,Meadow Brook-Strasburg 138 kV,APS,Solar,75.0,Complete,2021,87.1,91.3
+AC1-082,OH,Meigs,Ravenswood-Hemlock 69kV,AEP,Solar,48.0,Active,2021,32.2,34.7
+AG1-246,PA,Fayette,Gates Hill-Luzerne 25 kV,APS,Solar,7.5,Complete,2021,78.7,101.8
+AG1-345,VA,Nottoway,Crewe 12.5 kV,Dominion,Solar,8.0,Withdrawn,2021,192.8,192.8
+AB2-085,OH,Adams,Adams 138kV,AEP,Solar,49.9,Active,2021,25.5,48.4
+AF2-060,VA,Accomack,Wattsville 12 kV,DPL,Storage,9.0,Active,2021,0.0,0.0
+AG1-210,VA,Richmond,Northern Neck 34.5 kV,Dominion,Storage,10.0,Active,2021,60.4,60.4
+AG1-498,PA,Northampton,Mount Bethel 12.47 kV,PPL,Solar,8.8,Complete,2021,169.7,182.1
+AG1-033,PA,Somerset,Scalp Level 23 kV,PENELEC,Solar,5.0,Withdrawn,2021,3972.7,3999.4
+AG1-209,VA,Pittsylvania,Gretna 12.5 kV,Dominion,Storage,7.0,Active,2021,0.0,0.0
+AF2-398,PA,Fayette,Necessity-Dinnerbell 12.47 kV,APS,Solar,3.0,Complete,2021,140.5,181.7
+AF2-175,PA,Adams,Straban 13.2 kV,ME,Solar,3.0,Active,2021,3.9,5.1
+AF2-102,PA,Adams,Germantown 13.2 kV,ME,Solar,3.0,Active,2021,3.9,5.1
+AG1-520,PA,Somerset,Hooversville-Rockingham 23 kV,PENELEC,Solar Hybrid,4.0,Active,2021,93.1,120.4
+AG1-335,PA,Mercer,Wheatland 12.47 kV,ATSI,Solar,4.0,Withdrawn,2021,928.3,1200.5
+AG1-196,VA,Augusta,Grottoes 115 kV,Dominion,Solar Hybrid,150.0,Active,2021,361.0,372.6
+AE2-282,OH,Fulton,East Fayette 138 kV,ATSI,Solar,67.0,Complete,2021,4.0,4.9
+AG1-253,PA,Erie,Erie East-Union City 34.5 kV,PENELEC,Solar,4.0,Complete,2021,37.0,47.8
+AF2-171,VA,Prince Edward,Madisonville 115 kV,Dominion,Solar,150.0,Active,2021,367.2,378.7
+AG1-338,PA,Bedford,Curryville-RKB-Yellow Creek 23 kV I,PENELEC,Solar,5.0,Withdrawn,2021,74.2,95.9
+AG1-027,VA,Suffolk,Suffolk-Holland 115 kV,Dominion,Solar,127.5,Withdrawn,2021,637.9,651.5
+AG1-141,PA,Westmoreland,Hempfield 12.47 kV,APS,Solar,5.0,Active,2021,63.5,82.1
+AG1-362,PA,Berks,Wernersville 12.47 kV,PPL,Solar,5.0,Complete,2021,35.5,57.4
+AF2-108,VA,Dinwiddie,Locks 34.5 kV,Dominion,Solar Hybrid,10.0,Withdrawn,2021,0.0,0.0
+AG1-205,PA,Somerset,Rockwood 23 kV,PENELEC,Solar,10.0,Active,2021,36.2,46.8
+AF2-314,PA,Armstrong,Vandergrift-Guffy Junction 25 kV,APS,Solar,10.0,Complete,2021,29.8,38.5
+AF2-014,OH,Van Wert,Maddox Creek 345 kV,AEP,Solar,150.0,Active,2021,16.9,24.6
+AG1-197,PA,Crawford,Morgan Street-Cochranton 34.5 kV,PENELEC,Solar,15.0,Complete,2021,12.7,16.4
+AF2-380,PA,Clarion,Karns City-Bear Creek 25 kV,APS,Solar,15.0,Active,2021,210.9,214.8
+AF2-243,PA,Venango,Clark Summit 34.5 kV,PENELEC,Solar,15.0,Active,2021,12.8,16.5
+AG1-469,VA,Louisa,Gordonsville 34.5 kV,Dominion,Solar,15.6,Active,2021,0.0,0.0
+AG1-467,VA,Orange,Somerset 34.5 kV,Dominion,Solar,15.6,Active,2021,0.0,0.0
+AB2-040,VA,Greensville,Brink 115kV,Dominion,Solar,80.0,Complete,2021,19.6,60.9
+AG1-158,PA,Delaware,Middletown 34.5 kV,PECO,Solar,16.0,Active,2021,133.0,172.0
+AE2-249,PA,Bedford,Bedford North-Pennsylvania Hollow 23 kV,PENELEC,Solar,16.6,Active,2021,2.4,11.2
+AG1-291,PA,Allegheny,Neville 23 kV,DL,Hydro,16.8,Complete,2021,0.0,0.0
+AG1-337,PA,Dauphin,Elizabethville 12.47 kV,PPL,Solar Hybrid,5.0,Withdrawn,2021,575.5,597.3
+AG1-486,PA,Adams,Orrtanna 115 kV,ME,Storage,15.0,Active,2021,0.0,0.0
+AG1-465,PA,York,North Hanover-Gitts Run 115 kV,ME,Storage,100.0,Active,2021,862.3,869.6
+AG1-060,PA,Schuylkill,Eldred 69 kV,PPL,Wind Onshore,174.8,Active,2021,760.2,765.4
+AG1-466,VA,Orange,Orange 34.5 kV,Dominion,Solar,14.0,Active,2021,0.0,0.0
+AG1-296,PA,Jefferson,Snyder Township 34.5 kV,PENELEC,Solar,10.0,Active,2021,56.9,73.5
+AC1-083,VA,Pittsylvania,Smith Mountain-Bearskin 138kV,AEP,Solar,100.0,Complete,2021,74.6,77.8
+AG1-203,PA,Somerset,Reels Corner 23 kV,PENELEC,Solar,10.0,Active,2021,31.5,40.8
+AG1-202,PA,Crawford,Springboro 12.47 kV,PENELEC,Solar,10.0,Active,2021,2862.5,2923.2
+AF2-002,PA,Somerset,Hooversville 115 kV III,PENELEC,Solar,10.0,Active,2021,0.0,0.0
+AG1-198,PA,Erie,Union City 34.5 kV,PENELEC,Solar,12.0,Complete,2021,29.0,37.5
+AG1-041,PA,Bedford,Osterburg-Bedford North 23 kV,PENELEC,Solar,12.0,Active,2021,31.9,41.2
+AF2-092,PA,Bedford,Snake Spring-Bedford Area 23 kV,PENELEC,Solar,12.0,Active,2021,8.8,11.4
+AF2-223,OH,Union,Marysville 345 kV,AEP,Solar Hybrid,200.0,Active,2021,19.1,21.4
+AF2-148,PA,Huntingdon,Shade Gap-Three Springs KTS 23 kV,PENELEC,Solar,13.5,Withdrawn,2021,414.9,417.4
+AG1-532,VA,Greensville,Fields 34.5 kV,Dominion,Solar,13.5,Active,2021,0.0,0.0
+AF2-039,PA,Clearfield,Shawville-Clearfield 34.5 kV,PENELEC,Solar,13.5,Active,2021,13.0,16.8
+AC1-001,OH,Ross,Delano 138kV,AEP,Solar,49.9,Complete,2021,65.1,85.6
+AF2-222,VA,Charlotte,Madisonville DP-Twitty's Creek 115 kV,Dominion,Solar,167.0,Active,2021,528.9,539.3
+AG1-215,VA,Nottoway,Fort Pickett 13.2 kV,Dominion,Storage,14.0,Active,2021,1900.5,1900.5
+AG1-468,VA,Henry,Martinsville-Figsboro 34.5 kV,AEP,Solar,14.0,Withdrawn,2021,0.0,0.0
+AF2-079,OH,Darke,Greenville-West Milton 138 kV,Dayton,Solar,165.0,Active,2021,245.5,245.6
+AG1-195,VA,Augusta,Valley 230 kV,Dominion,Solar Hybrid,150.0,Active,2021,81.2,95.5
+AG1-527,PA,Allegheny,Imperial-Joffre 138 kV,APS,Solar,215.0,Active,2021,51.3,66.4
+AF2-137,OH,Logan,Marysville-Sorenson 765 kV,AEP,Solar,500.0,Active,2021,84.3,85.7
+AF2-042,VA,Halifax,Clover-Rawlings 500 kV,Dominion,Solar,500.0,Active,2021,441.0,446.7
+AG1-410,OH,Van Wert,Maddox Creek-RP Mone 345 kV,AEP,Solar,300.0,Active,2021,72.0,75.7
+AB2-026,VA,Powhatan,Powhatan 34.5kV,Dominion,Solar,20.0,Complete,2021,0.0,0.0
+AB2-029,VA,Fauquier,Remington 34.5kV,Dominion,Solar,19.8,Complete,2021,0.0,0.0
+AF2-265,PA,Bradford,South Troy-Athens 34.5 kV,PENELEC,Solar,15.0,Complete,2021,7.5,7.7
+AG1-239,OH,Stark,Blue Bell-Canton Central 138 kV,ATSI,Solar,150.0,Active,2021,58.1,75.1
+AG1-182,VA,Clarke,Millville-Old Chapel 138 kV,APS,Solar,100.0,Active,2021,98.6,107.9
+AG1-143,VA,Prince William,Gainesville-Loudoun 230 kV,Dominion,Storage,200.0,Active,2021,42.4,53.1
+AD1-020,PA,Adams,Hunterstown-Lincoln 115 kV,ME,Solar Hybrid,100.0,Complete,2021,16.2,16.2
+AG1-421,VA,Augusta,Lexington-Dooms 230 kV,Dominion,Solar,200.0,Active,2021,62.1,72.8
+AG1-305,VA,Louisa,Louisa-North Anna 230 kV,Dominion,Solar,118.0,Active,2021,108.0,126.2
+AC2-012,VA,Chesapeake,Grassfield-Great Bridge 115kV,Dominion,Solar,150.0,Complete,2021,53.4,57.1
+AG1-562,OH,Hardin,Marysville-Gunn Road 345 kV,AEP,Solar,250.0,Active,2021,76.6,81.0
+AG1-125,OH,Madison,Marysville-Flatlick 765 kV,AEP,Solar,400.0,Active,2021,105.4,110.5
+AG1-126,OH,Madison,Marysville-Flatlick 765 kV,AEP,Solar,400.0,Active,2021,0.1,0.1
+AF2-210,OH,Pickaway,Foster-Garver Road 345 kV,DEOK,Solar,200.0,Withdrawn,2021,93.5,103.3
+AG1-218,OH,Union,Marysville-Tangy 345 kV,AEP,Solar,250.0,Active,2021,76.4,80.8
+AF2-124,OH,Highland,Kyger Creek-Pierce 345 kV,OVEC,Solar,120.0,Active,2021,159.6,162.9
+AE2-224,PA,Cambria,Bearrock-Johnstown 230 kV,PENELEC,Solar,100.0,Complete,2021,10.0,10.2
+AG1-412,VA,Caroline,Ladysmith CT-Mine Road 230 kV,Dominion,Storage,200.0,Active,2021,211.3,222.0
+AG1-489,PA,Lawrence,McClelland-Hoytdale 345 kV,ATSI,Solar Hybrid,175.0,Active,2021,194.4,219.2
+AF2-013,VA,King George,Arnold's Corner-Dahlgren 230 kV,Dominion,Storage,100.0,Active,2021,154.7,176.2
+AG1-152,VA,Fauquier,Remington CT 230 kV,Dominion,Storage,100.0,Active,2021,148.6,170.1
+AB2-079,VA,Mecklenburg,Buggs Island-Chase City 115kV,Dominion,Solar,20.0,Complete,2021,351.8,376.8
+AG1-137,VA,Rockingham,Harrisonburg 230 kV,Dominion,Storage,100.0,Withdrawn,2021,196.1,217.6
+AF2-263,OH,Shelby,Shelby 138 kV,Dayton,Solar,98.0,Active,2021,224.7,224.9
+AF2-397,VA,Fluvanna,Fork Union-Mt. Eagle 230 kV,Dominion,Solar Hybrid,130.0,Active,2021,101.9,118.4
+AC2-123,VA,Wythe,Jacksons Ferry 138kV,AEP,Solar,75.0,Complete,2021,20.3,45.3
+AF2-304,VA,Surry,Surry-Hopewell 230 kV,Dominion,Solar Hybrid,89.0,Active,2021,95.3,119.4
+AG2-395,VA,Lynchburg,West Berwick 12 kV,PPL,Solar Hybrid,2.0,Complete,2021,0.0,0.0
+AG1-133,VA,Spotsylvania,North Anna-Ladysmith 500 kV,Dominion,Solar,128.0,Active,2021,215.0,236.9
+AG1-315,PA,Fayette,Lardin-Grays Landing 12.47 kV,APS,Solar,2.0,Complete,2021,325.9,421.5
+AF2-187,OH,Wayne,Brookside-Cloverdale 138 kV,ATSI,Solar,130.0,Active,2021,54.5,70.5
+AG1-142,PA,Fayette,Bethelboro 12.47 kV,APS,Solar,2.5,Complete,2021,23.4,30.2
+AD1-083,VA,Page,Page-Bethel 138 kV,APS,Solar,100.0,Active,2021,85.0,94.4
+AE2-092,VA,Albemarle,Kidds Store-Sherwood 115 kV,Dominion,Solar,138.0,Active,2021,52.6,65.1
+AF2-209,OH,Defiance,South Hicksville-Sowers 138 kV,AEP,Solar Hybrid,140.0,Active,2021,59.3,62.1
+AG1-336,PA,Northumberland,Hunter 12.47 kV,PPL,Solar Hybrid,5.0,Withdrawn,2021,1638.6,1659.4
+AC1-194,OH,Vinton,Elk 138kV,AEP,Solar,125.0,Active,2021,27.9,28.9
+AD1-140,OH,Greene,Greene-Clark 138 kV,ATSI,Solar,175.0,Active,2021,11.5,11.5
+AF2-105,VA,Pulaski,Morgans Cut-Glen Lyn #2 138 kV,AEP,Solar,100.0,Active,2021,407.2,415.2
+AG2-394,VA,Lynchburg,Rohrsburg 12 kV,PPL,Solar Hybrid,3.0,Complete,2021,0.0,0.0
+AG2-389,VA,Lynchburg,Trexlertown 12 kV,PPL,Solar Hybrid,3.0,Complete,2021,0.0,0.0
+AF2-037,VA,Louisa,Louisa-North Anna 230 kV,Dominion,Solar,94.0,Active,2021,282.2,305.0
+AE2-290,OH,Harrison,Nottingham 138 kV,AEP,Solar,100.0,Complete,2021,86.0,96.0
+AE2-217,OH,Clark,East Springfield-London 138 kV,ATSI,Solar,180.0,Active,2021,56.7,58.4
+AA1-111,PA,Clinton,Moshannon-East Towanda 230kV,PENELEC,Natural Gas,463.0,Complete,2021,16.3,16.3
+AF2-122,OH,Licking,Kirk 138 kV,AEP,Solar,107.7,Active,2021,3.6,7.3
+AG1-537,VA,Augusta,Barterbrook-Stuarts Draft 115 kV,Dominion,Storage,75.0,Active,2021,40.3,63.5
+AG1-136,VA,Botetourt,Cloverdale-Burlington Height 138 kV,AEP,Storage,100.0,Active,2021,92.2,100.2
+AC1-103,OH,Harrison,Nottingham 138kV,AEP,Natural Gas,1050.0,Withdrawn,2021,42.5,43.3
+AC1-078,OH,Madison,Beatty-London 138kV,ATSI,Solar,176.0,Complete,2021,40.5,42.8
+AF2-375,OH,Hancock,Ebersole-Fostoria 138 kV,AEP,Solar,129.6,Active,2021,70.1,76.4
+AF2-063,VA,Louisa,Louisa-North Anna 230 kV,Dominion,Solar,150.0,Active,2021,157.5,171.8
+AF2-106,VA,Pulaski,Hazel Hollow-Glen Lyn #1 138 kV,AEP,Solar,150.0,Active,2021,176.8,182.1
+AG1-059,PA,Westmoreland,Robbins 138 kV,APS,Solar,100.0,Active,2021,239.5,274.5
+AD1-103,OH,Huron,Beaver-Davis Besse 345 kV II,ATSI,Wind Onshore,500.4,Withdrawn,2021,19.2,19.2
+AG1-538,VA,Culpeper,Remington-Gordonsville 230 kV,Dominion,Storage,75.0,Active,2021,781.9,810.5
+AG1-086,PA,Allegheny,Findlay 23 kV,DL,Solar Hybrid,17.5,Complete,2021,0.0,0.0
+AF2-061,VA,Accomack,Wattsville 69kV,DPL,Storage,40.0,Active,2021,584.7,599.4
+AG1-323,OH,Logan,Blue Jacket 138 kV,Dayton,Solar Hybrid,40.0,Active,2021,153.0,153.0
+AG1-277,PA,Luzerne,Salem-Beacon Power 69 kV,PPL,Solar Hybrid,40.0,Active,2021,6.0,198.8
+AF2-234,PA,Snyder,Sunbury Yard #1-Richfield Tie #2 69 kV,PPL,Solar Hybrid,40.0,Active,2021,16.9,39.7
+AG1-054,PA,Lawrence,Potter-Harlan 69 kV,ATSI,Solar,40.0,Active,2021,203.5,220.8
+AF2-067,OH,Preble,West Manchester 69 kV,Dayton,Solar,40.0,Active,2021,63.2,63.6
+AF2-371,OH,Fairfield,Harrison-Good Hope 138 kV,AEP,Solar,84.0,Active,2021,209.8,214.5
+AE2-342,OH,Champaign,Woodstock 69 kV,Dayton,Solar,40.0,Complete,2021,101.1,102.7
+AG1-303,PA,Crawford,Geneva 115 kV,PENELEC,Solar,44.0,Active,2021,99.1,117.6
+AD1-105,VA,King William,Kings Dominion DP 115 kV,Dominion,Solar,74.0,Complete,2021,0.0,0.0
+AF2-123,OH,Madison,National-Tangy 138 kV,ATSI,Solar,49.0,Active,2021,136.7,176.9
+AG1-369,OH,Paulding,Logtown 138 kV,AEP,Solar,49.9,Active,2021,1.3,1.3
+AF2-298,OH,Montgomery,Crown-New Lebanon 69 kV,Dayton,Solar,49.9,Active,2021,90.7,91.0
+AE2-303,OH,Union,Honda Marysville Tap,Dayton,Solar,49.9,Complete,2021,125.4,126.6
+AF2-055,VA,Northampton,Plaintation Creek 69 kV,ODEC,Solar Hybrid,45.0,Active,2021,2046.9,2072.7
+AF2-266,VA,Charlotte,Clover 230 kV,Dominion,Storage,50.0,Withdrawn,2021,1376.5,1419.4
+AG1-422,VA,Augusta,Lexington-Dooms 230 kV,Dominion,Storage,50.0,Active,2021,32.7,32.7
+AG1-221,VA,Loudoun,Poland Rd-Runway DP 230 kV,Dominion,Storage,50.0,Active,2021,24.5,67.4
+AG1-154,VA,Caroline,Ladysmith CT 230 kV,Dominion,Storage,50.0,Active,2021,139.0,181.9
+AF2-377,OH,Paulding,Logtown 138 kV,AEP,Storage,50.0,Active,2021,0.9,0.9
+AF2-376,OH,Paulding,Timber Switch 138 kV,AEP,Storage,50.0,Active,2021,3.0,3.0
+AG1-068,OH,Adams,London-Tangy 69 kV,ATSI,Solar,49.9,Withdrawn,2021,685.3,723.2
+AC2-141,VA,Isle Of Wight,Septa 500kV,Dominion,Solar,240.0,Active,2021,0.0,0.0
+AF1-006,PA,Erie,Fairview East 34.5 kV,PENELEC,Solar,20.0,Complete,2021,0.0,0.0
+AF1-028,VA,Rockingham,Endless Caverns 115 kV,Dominion,Storage,200.0,Active,2021,14.6,18.9
+AG1-034,OH,Licking,Centerburg 138 kV,AEP,Solar,127.5,Active,2021,0.4,0.4
+AF2-198,OH,Licking,Heath 69 kV,AEP,Storage,22.4,Active,2021,21.7,34.6
+AF2-299,VA,Greensville,Fields 34.5 kV,Dominion,Solar,25.0,Active,2021,140.0,140.0
+AF2-259,VA,Chesterfield,Locks 34.5 kV,Dominion,Solar,25.0,Active,2021,0.0,0.0
+AG1-131,VA,Shenandoah,Edinburg 115 kV,Dominion,Solar,25.6,Active,2021,39.9,107.7
+AG1-283,PA,Monroe,Effort Mountain-Gilbert 138 kV,PPL,Solar,30.0,Active,2021,22.5,52.9
+AG1-146,VA,Lancaster,Garner DP-Lancaster 115 kV,Dominion,Solar,30.0,Active,2021,1317.5,1375.4
+AE2-206,OH,Champaign,East Sidney-Quincy 138 kV,Dayton,Solar,99.0,Complete,2021,53.1,54.0
+AE2-221,OH,Clinton,Clinton-Stuart 345 kV,Dayton,Solar,300.0,Complete,2021,30.3,30.7
+AE2-218,OH,Miami,Eldean 138 kV,Dayton,Solar,178.0,Active,2021,4.9,5.4
+AE2-278,OH,Champaign,Urbana 138 kV,Dayton,Solar,150.7,Withdrawn,2021,16.3,16.9
+AG1-327,PA,Franklin,Ringgold _x0013_ East Waynesboro 138 kV,APS,Solar,35.0,Withdrawn,2021,286.9,371.1
+AG1-490,PA,Mercer,Shenango-McDowell 138 kV,ATSI,Solar Hybrid,125.0,Withdrawn,2021,277.7,284.3
+AF2-361,PA,Juniata,Mifflintown Tap 69 kV,PPL,Solar,85.0,Active,2021,10.4,21.1
+AG1-045,VA,Frederick,Redbud-Gaylord 34.5 kV,APS,Solar,30.0,Complete,2021,13.8,17.9
+AG1-518,VA,Suffolk,Suffolk 230 kV,Dominion,Solar Hybrid,50.0,Active,2021,129.4,141.7
+AE2-211,PA,York,Jackson-Three Mile Island 230 kV,ME,Solar,75.0,Complete,2021,114.7,118.8
+AG1-043,VA,Accomack,Sowego 115 kV,Dominion,Solar,60.0,Withdrawn,2021,120.9,129.4
+AF2-010,PA,Erie,Union City-Titusville 115 kV,PENELEC,Solar,77.0,Active,2021,903.5,926.6
+AF2-382,VA,Buchanan,Hurley 69 kV,AEP,Solar,75.0,Active,2021,91.2,99.6
+AG1-156,PA,Carbon,Jack Frost-Lake Harmony 69 kV,PPL,Solar,60.0,Active,2021,80.2,95.4
+AG1-135,VA,Richmond,Garner-Lancaster 115 kV,Dominion,Solar,60.0,Active,2021,548.2,577.2
+AF2-176,PA,Mercer,Masury-Maysville 138 kV,ATSI,Solar,60.0,Active,2021,608.7,642.5
+AG1-023,VA,Louisa,North Anna-Louisa 230 kV,Dominion,Solar,75.0,Active,2021,125.8,154.4
+AE2-283,VA,Campbell,Gladys-Stone Mill 69 kV,Dominion,Solar,60.4,Active,2021,504.9,540.4
+AF2-120,VA,Richmond,Garner-Northern Neck 115 kV,Dominion,Solar,62.0,Active,2021,190.9,190.9
+AG1-508,VA,Grayson,Point Lookout 69 kV,AEP,Wind Onshore,63.3,Active,2021,7.7,17.6
+AF2-040,VA,Fauquier,Elk Run-Gainesville 230 kV,Dominion,Storage,75.0,Active,2021,346.2,374.8
+AG1-504,PA,Luzerne,Glenbrook-Salem 69 kV,PPL,Solar,68.0,Withdrawn,2021,557.9,571.3
+AG1-322,VA,Accomack,Birchwood 230 kV,Dominion,Solar Hybrid,70.0,Withdrawn,2021,759.1,789.8
+AG1-420,PA,Butler,Campbell-Kiesters 138 kV,APS,Solar,70.0,Active,2021,121.3,156.9
+AG1-147,VA,Lancaster,Garner DP-Lancaster 115 kV,Dominion,Solar,70.0,Active,2021,667.9,667.9
+AF2-117,PA,Fulton,Warfordsburg-McConnellsburg 138 kV,APS,Solar,70.0,Active,2021,121.0,146.2
+AG1-153,VA,Brunswick,Heritage 500 kV,Dominion,Storage,75.0,Active,2021,170.4,207.8
+AG1-160,VA,Greensville,Rogers Road 500 kV,Dominion,Storage,75.0,Active,2021,427.4,464.8
+AG1-541,VA,Hanover,St. Johns 115 kV,Dominion,Storage,75.0,Active,2021,1429.9,1429.9
+AF2-228,PA,York,Brunner Island 13.8 kV,PPL,Solar,61.0,Active,2021,2.3,2.7
+AF2-082,PA,Dauphin,Dauphin PG Tie_x0013_Dauphin Juniata Tie 69 k,PPL,Solar,55.0,Active,2021,12.3,28.9
+AG1-183,VA,King And Queen,St. Johns DP-REC 115 kV,Dominion,Solar,50.0,Withdrawn,2021,593.2,603.4
+AF2-439,PA,Adams,Roxbury-Carlisle 115 kV,PENELEC,Solar,50.0,Withdrawn,2021,503.4,541.9
+AF2-076,VA,Suffolk,Suffolk-Nucor Steel 230 kV,Dominion,Solar,50.0,Withdrawn,2021,314.2,357.1
+AF2-051,PA,Crawford,Geneva 115 kV,PENELEC,Solar,50.0,Withdrawn,2021,46.2,58.0
+AE2-285,PA,Mercer,Maysville 69 kV,ATSI,Solar,50.0,Complete,2021,30.7,32.6
+AG1-415,VA,Clarke,Double Toll Gate-Old Chapel 138 kV,APS,Solar,50.0,Active,2021,196.5,249.1
+AG1-091,VA,Pulaski,Hickman-River Bend 69 kV,AEP,Solar,50.0,Active,2021,180.6,193.6
+AF2-440,OH,Highland,Hillsboro-Middleboro 138 kV,AEP,Solar,50.0,Active,2021,180.9,196.8
+AF2-331,PA,Montour,Montour 230 kV,PPL,Solar,50.0,Active,2021,30.2,36.8
+AF2-107,VA,Amherst,Clifford 138 kV,AEP,Solar,50.0,Active,2021,278.6,294.5
+AF2-056,PA,Schuylkill,Shenandoah Tap 1_x0013_ Mahanoy Tap 2 69 kV,PPL,Solar,50.0,Active,2021,251.6,269.9
+AG1-485,PA,Allegheny,Brunot Island 138 kV,DL,Storage,55.0,Active,2021,0.0,0.0
+AF2-297,VA,Halifax,Sedge Hill 115 kV,Dominion,Solar,80.0,Active,2021,587.3,609.0
+AF2-164,PA,Venango,Handsome Lake 345 kV,PENELEC,Solar,80.0,Active,2021,441.4,446.6
+AF2-149,OH,Knox,Sharp Road 69 kV,AEP,Solar,80.0,Active,2021,6.1,9.7
+AE2-029,VA,Rockingham,Grottoes-Merck 115kV,Dominion,Solar,50.0,Complete,2021,145.0,179.8
+AF2-119,VA,Fauquier,Bristers-Sowego 115 kV,Dominion,Solar,80.0,Active,2021,93.2,114.9
+AF2-066,OH,Preble,West Manchester-Crown 69kV,Dayton,Solar,80.0,Active,2021,95.4,95.5
+AF2-035,VA,Hanover,St. Johns 115 kV,Dominion,Solar,80.0,Active,2021,531.8,531.8
+AD1-061,PA,Franklin,McConnelsburg-Mercersburg 34 kV,APS,Solar,20.0,Complete,2021,24.3,26.3
+AF1-086,PA,Clearfield,Madera-Westover South 115 kV,PENELEC,Wind Onshore,109.9,Active,2021,85.1,85.1
+AF2-318,PA,Bradford,East Towanda-New Albany 34.5 kV,PENELEC,Solar,20.0,Withdrawn,2021,366.1,369.3
+AF2-341,PA,Mercer,Maysville138 kV,ATSI,Solar,20.0,Withdrawn,2021,1116.2,1165.3
+AG1-519,VA,Louisa,Cash's Corner 230 kV,Dominion,Solar,20.0,Withdrawn,2021,1132.2,1239.5
+AG1-330,PA,Beaver,Beavertown 12.47 kV,PPL,Solar Hybrid,5.0,Withdrawn,2021,405.4,427.3
+AF2-233,PA,Snyder,Penns-Richfield Tie #1 69 kV,PPL,Solar Hybrid,20.0,Active,2021,33.8,79.4
+AF2-383,PA,York,Tolna 115 kV,ME,Solar Hybrid,20.0,Active,2021,50.8,65.6
+AF2-241,PA,Bradford,Athens-Milan 34.5 kV,PENELEC,Solar,20.0,Withdrawn,2021,190.7,218.9
+AF2-384,PA,Allegheny,Brunot Island 138 kV,DL,Solar Hybrid,20.0,Active,2021,0.0,0.0
+AG1-279,PA,Luzerne,Salem-Beacon Power 69 kV,PPL,Solar Hybrid,20.0,Active,2021,0.0,0.0
+AG1-383,VA,Chesapeake,Hickory 34.5 kV,Dominion,Solar Hybrid,20.0,Active,2021,0.0,0.0
+AG1-558,VA,Louisa,Buckner 34.5 kV,Dominion,Solar Hybrid,20.0,Active,2021,0.0,0.0
+AG1-386,PA,Washington,Smith-Francis Junction 25 kV,APS,Solar Hybrid,20.0,Active,2021,27.1,35.1
+AG1-278,PA,Luzerne,Salem-Beacon Power 69 kV,PPL,Solar Hybrid,20.0,Active,2021,2201.2,2201.2
+AF2-239,PA,Bradford,Wyalusing-Hollenback WRC 34.5 kV,PENELEC,Solar,20.0,Withdrawn,2021,380.5,383.2
+AF2-203,PA,Columbia,Rohrsburg 12.5 kV,PPL,Solar,20.0,Withdrawn,2021,118.3,161.2
+AF2-146,PA,Huntingdon,Hill Valley-Valley REC 46 kV,PENELEC,Solar,20.0,Withdrawn,2021,481.2,485.3
+AG1-346,VA,Shenandoah,Mount Jackson DP 115 kV,Dominion,Solar,20.0,Active,2021,51.1,137.9
+AG1-377,PA,Centre,Philipsburg 115 kV,PENELEC,Solar,20.0,Active,2021,48.2,48.2
+AG1-378,PA,Centre,Philipsburg 115 kV,PENELEC,Solar,20.0,Active,2021,41.2,41.2
+AG1-382,PA,Cambria,SGC Tap-Reese REC 46 kV,PENELEC,Solar,20.0,Active,2021,63.9,82.7
+AG1-393,VA,Dinwiddie,Fort Pickett DP 34.5 kV,Dominion,Solar,20.0,Active,2021,1588.4,1588.4
+AG1-394,VA,Southampton,Boykins 34.5 kV,Dominion,Solar,20.0,Active,2021,90.3,90.3
+AG1-145,VA,James City,Lightfoot 34.5 kV,Dominion,Solar,20.0,Complete,2021,0.0,0.0
+AG1-388,VA,Essex,Dunnsville 34.5 kV,Dominion,Solar,20.0,Complete,2021,0.0,0.0
+AE2-131,PA,Westmoreland,Philipsburg-Karthaus 34.5,PENELEC,Solar,20.0,Complete,2021,2.0,9.3
+AG1-534,VA,Loudoun,Evergreen Mills 230 kV,Dominion,Storage,200.0,Active,2021,70.3,81.0
+AF2-150,OH,Morrow,Galion 138 kV,ATSI,Solar,88.0,Active,2021,14.5,18.7
+AF2-006,PA,Lackawanna,Jermyn Tap-Brownell 69 kV,PPL,Solar,20.0,Withdrawn,2021,17.1,62.7
+AG1-282,VA,Essex,Dunnsville 34.5 kV,Dominion,Solar,20.0,Active,2021,0.0,0.0
+AG1-484,PA,Cumberland,Mountain 115 kV,ME,Solar Hybrid,20.0,Withdrawn,2021,3405.3,3419.6
+AC2-029,OH,Pickaway,Circleville 138kV,AEP,Solar,70.0,Active,2021,7.3,29.2
+AG1-259,PA,Northumberland,Sunbury-Dalmatia 69 kV,PPL,Solar,19.9,Active,2021,210.7,256.5
+AG1-308,PA,Clearfield,Shawville-Philipsburg 34.5 kV,PENELEC,Solar,19.9,Active,2021,505.9,552.8
+AF2-444,PA,Northumberland,Reed-Reed Tap #2 69 kV,PPL,Solar,19.8,Active,2021,34.1,80.2
+AF2-445A,PA,Northumberland,Fishbach-Port Carbon 69 kV,PPL,Solar,19.8,Active,2021,12.1,58.2
+AG1-257,PA,Centre,Madisonburg Jct-Millheim 46 kV,APS,Solar,19.9,Active,2021,326.7,338.2
+AF2-086,PA,Columbia,Scott Tap-Bowmans Mill Tap 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AG1-102,VA,Gloucester,White Marsh 34.5 kV,Dominion,Storage,19.0,Active,2021,0.0,0.0
+AG1-214,VA,Rockingham,Grottoes 12.5 kV,Dominion,Storage,19.0,Active,2021,356.2,356.2
+AE2-343,PA,Crawford,Andover (Maysville) 69 kV II,ATSI,Solar Hybrid,17.9,Complete,2021,76.4,81.7
+AF2-054,VA,Gloucester,Wan 34.5 kV,Dominion,Solar,19.9,Active,2021,0.0,0.0
+AG1-256,VA,Accomack,Northern Neck 230 kV,Dominion,Storage,20.0,Withdrawn,2021,473.0,580.3
+AF2-057,VA,Chesapeake,Grassfield 34.5 kV,Dominion,Storage,20.0,Complete,2021,0.0,0.0
+AG1-267,PA,Northampton,Martins Creek 69 kV,PPL,Storage,20.0,Active,2021,0.0,1.2
+AF2-045,PA,Cambria,Cambria Nug 115 kV,PENELEC,Storage,20.0,Withdrawn,2021,0.0,0.0
+AG1-155,VA,Botetourt,Cloverdale 34.5 kV,AEP,Storage,20.0,Withdrawn,2021,0.0,0.0
+AG1-545,VA,Prince George,W. Quaker Rd-Disputanta 34.5 kV,Dominion,Solar Hybrid,20.0,Withdrawn,2021,294.2,294.2
+AG1-281,PA,Blair,Claysburg-HCR Tap 46 kV,PENELEC,Solar,20.0,Active,2021,61.3,79.3
+AF2-238,PA,Bradford,Mansfield-South Troy 34.5 kV,PENELEC,Solar,20.0,Active,2021,97.4,105.9
+AF2-001,PA,Somerset,Hooversville 115 kV II,PENELEC,Solar,20.0,Active,2021,0.0,0.0
+AG1-165,PA,Luzerne,East Hazelton-Weatherly Tap 69 kV,PPL,Solar,20.0,Active,2021,0.0,0.0
+AG1-164,PA,Luzerne,East Hazelton-Weatherly Tap 69 kV,PPL,Solar,20.0,Active,2021,0.0,0.0
+AG1-280,PA,Blair,Claysburg-Puzzletown 46 kV,PENELEC,Solar,20.0,Active,2021,11.1,14.4
+AF2-337,PA,Bedford,Snake Spring 115 kV II,PENELEC,Solar,40.0,Active,2021,1205.5,1205.5
+AF2-077,VA,Gloucester,White Marsh 34.5 kV,Dominion,Solar,20.0,Active,2021,0.0,0.0
+AG1-100,PA,Crawford,Venango-Saegertown 34.5 kV,PENELEC,Solar,20.0,Active,2021,9.6,12.5
+AF2-294,PA,Wayne,Thompson 34.5 kV,PENELEC,Solar,17.0,Complete,2021,9.8,12.6
+AG1-040,PA,Crawford,Morgan Street-Mount Hope 34.5 kV,PENELEC,Solar,20.0,Active,2021,22.4,29.0
+AF2-438,PA,Mercer,Heidleberg-Lavino 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-121,PA,Clearfield,Philipsburg-Shawville 34.5 kV,PENELEC,Solar,20.0,Active,2021,66.2,85.6
+AF2-433,PA,Columbia,Columbia-Geisinger Tap #1 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-425,PA,Adams,Reed-Reed Tap#1 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-129,PA,Mercer,Sharon-Mercer 69 kV,ATSI,Solar,20.0,Active,2021,48.4,62.6
+AF2-424,PA,Northumberland,Reed-Reed Tap #1 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-338,PA,Bedford,Snake Spring 115 kV III,PENELEC,Solar,60.0,Active,2021,503.6,503.6
+AF2-421,PA,Adams,East Hazelton-Weatherly Tap 69,PPL,Solar,20.0,Active,2021,12.0,57.6
+AF2-418,PA,Columbia,Millville Tap 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-417,PA,Adams,West Damascus Tap-West Damascus 69 kV,PPL,Solar,20.0,Active,2021,33.8,79.4
+AF2-339,PA,Bedford,Snake Spring 115 kV IV,PENELEC,Solar,80.0,Active,2021,272.6,272.6
+AG1-166,VA,Nottoway,Lone Pine 115 kV,Dominion,Solar,20.0,Active,2021,1887.3,1974.1
+AF2-130,PA,Clarion,Cobalt Corners 34.5 kV,PENELEC,Solar,20.0,Active,2021,11.8,15.2
+AF2-166,PA,Venango,Emlenton 34.5 kV,PENELEC,Solar,20.0,Active,2021,10.6,13.7
+AF2-165,PA,Venango,Clark Summit-Emlenton 34.5 kV,PENELEC,Solar,20.0,Active,2021,9.1,11.8
+AF2-295,PA,Elk,Wilcox-Paper City 46 kV,APS,Solar,20.0,Active,2021,27.3,35.3
+AG1-509,VA,Grayson,Point Lookout 69 kV,AEP,Wind Onshore,105.4,Withdrawn,2021,4.6,10.6
+AG1-231,OH,Greene,Glady Run_x0013_Xenia 69 kV,Dayton,Solar,20.0,Active,2021,147.6,147.6
+AG1-134,VA,King William,Kings Dominion DP 115 kV,Dominion,Solar,100.0,Active,2021,138.5,138.5
+AG1-227,PA,Schuylkill,Altamont-Tuscarora 69 kV,PPL,Solar,20.0,Active,2021,782.9,828.5
+AG1-207,OH,Montgomery,Vandalia 69 kV,Dayton,Storage,85.0,Active,2021,10.4,10.4
+AF2-229,PA,Cumberland,Roxbury 23 kV,PENELEC,Solar,20.0,Active,2021,48.4,59.9
+AG1-170,VA,Nottoway,Lone Pine 115 kV,Dominion,Solar,20.0,Active,2021,722.3,722.3
+AG1-169,VA,Nottoway,Lone Pine 115 kV,Dominion,Solar,20.0,Active,2021,859.9,859.9
+AG1-168,VA,Nottoway,Lone Pine 115 kV,Dominion,Solar,20.0,Active,2021,1090.1,1090.1
+AF2-296,PA,Clearfield,Madera 34.5 kV,PENELEC,Solar,20.0,Active,2021,7.6,9.8
+AF2-336,PA,Bedford,Snake Spring 115 kV I,PENELEC,Solar,20.0,Active,2021,3558.9,3603.7
+AG1-167,VA,Nottoway,Lone Pine 115 kV,Dominion,Solar,20.0,Active,2021,2521.7,2521.7
+AG1-193,PA,Venango,Utica Junction 34.5 kV,PENELEC,Solar,20.0,Active,2021,137.1,177.3
+AG1-228,PA,Schuylkill,Alta Haute-Tuscarora 69 kV,PPL,Solar,20.0,Active,2021,544.0,544.0
+AE2-260,VA,Greensville,Clubhouse 230 kV,Dominion,Solar Hybrid,200.0,Active,2022,603.8,614.3
+AE2-289,PA,,,APS,Wind Onshore,80.0,Active,2022,3.0,3.8
+AE2-126,PA,Clearfield,Dubois-Curwensville 34.5 kV,PENELEC,Solar,20.0,Complete,2022,4.0,11.1
+AE2-299,PA,Erie,Erie East 230 kV,PENELEC,Storage,160.0,Active,2022,21.5,23.0
+AE2-185,VA,Campbell,Gladys DP-Stonemill Switching Station 69 kV,Dominion,Solar Hybrid,60.0,Active,2022,255.0,283.3
+AE2-194,OH,Columbiana,Congress-Toronto 138 kV,ATSI,Solar,145.0,Active,2022,67.4,69.4
+AE2-187,VA,Pittsylvania,Shockoe DP-Chatham 69 kV,Dominion,Solar Hybrid,60.0,Active,2022,389.2,417.5
+AF2-186,OH,Paulding,South Cecil 69 kV,AEP,Solar,45.0,Active,2022,26.7,33.0
+AE2-316,PA,Jefferson,Brookville-Squab Hollow 138 kV,APS,Solar,90.0,Active,2022,86.3,89.0
+AF1-075,VA,Rockingham,Harrisburg-Endless Caverns 230 kV,Dominion,Solar,73.0,Active,2022,113.7,142.5
+AE2-190,VA,Fauquier,Elk Run D.P.-Gainesville 230 kV,Dominion,Solar,70.0,Active,2022,118.6,148.6
+AE2-256,PA,Lebanon,Copperstone-North Lebanon 230 kV,ME,Solar,70.0,Active,2022,137.4,142.8
+AF1-231,VA,Accomack,New Church 138 kV,DPL,Storage,19.0,Active,2022,1.3,1.7
+AE2-292,VA,Campbell,Grit DP-Perth 115 kV,Dominion,Solar,127.0,Active,2022,92.4,105.8
+AE2-212,VA,Chesterfield,Harrowgate 34 kV,Dominion,Solar,20.0,Complete,2022,0.0,0.0
+AE2-120,PA,Centre,Graymont-Zion 46 kV,APS,Solar,20.0,Active,2022,65.1,79.6
+AE2-118,PA,Huntingdon,ABW Tap-Williamsburg 46 kV,PENELEC,Solar,20.0,Complete,2022,28.6,44.7
+AE2-117,PA,Huntingdon,ABW Tap-Alexandria 46 kV,PENELEC,Solar,20.0,Active,2022,78.3,93.5
+AE2-259,VA,Buckingham,Curdsville-Willis Mtn 115 kV,Dominion,Solar,100.0,Active,2022,71.0,88.0
+AE2-318,OH,Clermont,Ford-Cedarville 138 kV,DEOK,Solar,100.0,Complete,2022,86.3,90.5
+AE2-113,PA,Mckean,Farmers Valley-Ridgeway 115 kV,PENELEC,Solar,120.0,Active,2022,518.6,522.4
+AE2-033,VA,Sussex,Clubhouse-Sapony 230 kV,Dominion,Solar,149.0,Active,2022,55.7,69.8
+AE2-264,PA,Blair,Altoona-Raystown 230 kV,PENELEC,Solar,80.0,Active,2022,1505.9,1508.9
+AE2-291,VA,Pittsylvania,Grit DP-Perth 115 kV,Dominion,Solar,102.0,Active,2022,205.5,222.2
+AE2-156,VA,Chesapeake,Yadkin 115 kV,Dominion,Storage,100.0,Active,2022,81.7,98.7
+AE2-193,PA,Mercer,Shenango 138 kV,ATSI,Solar,120.0,Withdrawn,2022,37.2,40.5
+AE2-250,VA,Greensville,Purdy Sw.-Reams 115 kV,Dominion,Solar,82.5,Active,2022,168.8,189.4
+AE2-124,VA,Virginia Beach,Landstown 230 kV,Dominion,Wind Offshore,800.1,Active,2022,5.2,7.9
+AF2-213,PA,York,Zions View-Smith Street 115 kV,ME,Storage,81.2,Active,2022,102.8,111.0
+AE2-319,OH,Pickaway,Atlanta 69kV I,Dayton,Solar,100.0,Complete,2022,70.8,70.8
+AE2-104,VA,Accomack,Suffolk 115 kV,Dominion,Solar,49.0,Complete,2022,73.5,108.2
+AE2-181,OH,Williams,Snyder 69kV,ATSI,Solar,49.0,Active,2022,26.5,32.4
+AE2-270,VA,Surry,Hopewell-Surry 230 kV,Dominion,Solar Hybrid,150.0,Active,2022,213.0,227.0
+AE2-041,VA,Middlesex,Harmony Village 230 kV,Dominion,Storage,40.0,Active,2022,105.0,157.5
+AE2-123,VA,Virginia Beach,Birdneck-Landstown 230 kV,Dominion,Wind Offshore,800.1,Active,2022,344.8,347.4
+AE2-122,VA,Virginia Beach,Birdneck-Landstown 230 kV,Dominion,Wind Offshore,800.1,Active,2022,351.0,353.6
+AB2-015,VA,Southampton,Franklin 115kV,Dominion,Solar,91.0,Withdrawn,2022,74.2,79.9
+AC2-015,OH,Crawford,Chatfield-Howard 138kV,AEP,Solar,117.0,Active,2022,25.2,67.9
+AE2-345,PA,Adams,Hunterstown-Texas Eastern Tap 115 kV,ME,Solar,70.0,Active,2022,109.3,113.5
+AE2-053,VA,Mecklenburg,Kerr Dam-Ridge Road 115 kV,Dominion,Storage,20.0,Active,2022,0.0,0.0
+AE2-052,VA,Prince George,Disputanta-Poe 115 kV,Dominion,Storage,20.0,Active,2022,0.0,0.0
+AC1-043,VA,Culpeper,Mountain Run-Mitchell 115 kV,Dominion,Solar,100.0,Active,2022,70.7,75.7
+AE2-074,PA,Potter,Potter 46 kV,APS,Solar,35.0,Complete,2022,25.6,33.2
+AG1-419,PA,Berks,Lynnville-South Hamburg 69 kV,ME,Solar,50.0,Active,2022,101.4,131.1
+AE2-051,VA,Sussex,Carson-Septa 500 kV,Dominion,Solar,150.0,Active,2022,1485.8,1504.2
+AC1-191,VA,Hanover,Elmont 115kV,Dominion,Solar,80.0,Active,2022,40.7,40.7

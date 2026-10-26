@@ -1,0 +1,20 @@
+{
+  "VA": {
+    "siting_authority": "County / city",
+    "summary": "Local zoning approval (conditional or special use permit) plus a comprehensive-plan review are required. Localities can negotiate siting agreements. State DEQ Permit by Rule covers solar up to 150 MW.",
+    "statutes": ["Va. Code 15.2-2232", "Va. Code 15.2-2316.6 to 2316.9", "9VAC15-60 (Permit by Rule)"],
+    "local_veto": true
+  },
+  "PA": {
+    "siting_authority": "Township / borough",
+    "summary": "No statewide siting authority for solar. Municipal zoning ordinances decide where projects can go. Construction disturbing 1+ acre needs a DEP NPDES stormwater permit.",
+    "statutes": ["PA Municipalities Planning Code", "25 Pa. Code Ch. 102 (NPDES)"],
+    "local_veto": true
+  },
+  "OH": {
+    "siting_authority": "Ohio Power Siting Board (50 MW+)",
+    "summary": "Projects of 50 MW or more need an OPSB certificate. Under SB 52 (2021), county commissioners can ban large solar in unincorporated areas and sit on the OPSB panel for the case.",
+    "statutes": ["Ohio Rev. Code 4906", "Ohio SB 52 (2021)"],
+    "local_veto": true
+  }
+}

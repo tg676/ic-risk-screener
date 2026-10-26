@@ -1,0 +1,258 @@
+{
+ "compact": {
+  "runs": [
+   {
+    "totals": {
+     "input": 10229,
+     "cached": 3735,
+     "output": 2597,
+     "cost": 0.00198525,
+     "calls": 8
+    },
+    "secs": 4.6,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   },
+   {
+    "totals": {
+     "input": 10229,
+     "cached": 3735,
+     "output": 2597,
+     "cost": 0.00198525,
+     "calls": 8
+    },
+    "secs": 0.8,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   },
+   {
+    "totals": {
+     "input": 10229,
+     "cached": 3735,
+     "output": 2597,
+     "cost": 0.00198525,
+     "calls": 8
+    },
+    "secs": 1.3,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   }
+  ],
+  "summary": {
+   "input": 10229,
+   "cached": 3735,
+   "output": 2597,
+   "cost": 0.001985,
+   "secs": 2.2,
+   "agreement_with_compact_run1": 1.0,
+   "verdicts": [
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ]
+   ]
+  }
+ },
+ "raw": {
+  "runs": [
+   {
+    "totals": {
+     "input": 33450,
+     "cached": 3735,
+     "output": 2988,
+     "cost": 0.00450285,
+     "calls": 8
+    },
+    "secs": 9.3,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   },
+   {
+    "totals": {
+     "input": 33450,
+     "cached": 3735,
+     "output": 2988,
+     "cost": 0.00450285,
+     "calls": 8
+    },
+    "secs": 2.1,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   },
+   {
+    "totals": {
+     "input": 33450,
+     "cached": 3735,
+     "output": 2988,
+     "cost": 0.00450285,
+     "calls": 8
+    },
+    "secs": 0.8,
+    "ratings": {
+     "Brookfield/network_upgrades": "lower",
+     "Brookfield/allocation_volatility": "watch",
+     "Brookfield/connection_route": "lower",
+     "Brookfield/permitting": "lower",
+     "Brookfield/community_resistance": "lower",
+     "Ridgeview/network_upgrades": "higher",
+     "Ridgeview/allocation_volatility": "higher",
+     "Ridgeview/connection_route": "higher",
+     "Ridgeview/permitting": "watch",
+     "Ridgeview/community_resistance": "higher",
+     "Meadow Creek/network_upgrades": "uncertain",
+     "Meadow Creek/allocation_volatility": "higher",
+     "Meadow Creek/connection_route": "uncertain",
+     "Meadow Creek/permitting": "higher",
+     "Meadow Creek/community_resistance": "uncertain"
+    },
+    "verdicts": [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    "verifier_actions": 2
+   }
+  ],
+  "summary": {
+   "input": 33450,
+   "cached": 3735,
+   "output": 2988,
+   "cost": 0.004503,
+   "secs": 4.1,
+   "agreement_with_compact_run1": 1.0,
+   "verdicts": [
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ],
+    [
+     "prioritize",
+     "deprioritize",
+     "deprioritize"
+    ]
+   ]
+  }
+ }
+}
