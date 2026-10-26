@@ -36,6 +36,11 @@
   table.cmp th.us { background: var(--teal); }
   .y { color: var(--green); font-weight: 700; } .n { color: #C9C9C9; } .p { color: var(--purple); font-weight: 700; }
   .diag svg { width: 100%; height: 400px; display: block; margin-top: -20px; }
+  .ctx .step { padding: 10px 14px; font-size: 17px; margin-bottom: 4px; }
+  .ctx .arrow { margin-bottom: 4px; font-size: 18px; }
+  .ctx .kpi { margin-bottom: 22px; }
+  .ctx .kpi b { font-size: 38px; min-width: 200px; }
+  .ctx .kpi span { font-size: 18px; }
   .shot { width: 100%; border: 1px solid #DDD; border-radius: 6px; display: block; }
   .bul { font-size: 20px; line-height: 1.4; margin: 0; padding-left: 20px; }
   .bul li { margin-bottom: 12px; }
@@ -66,7 +71,34 @@
   </div>
 </section>
 
-<!-- 2 PROBLEM -->
+<!-- 2 CONTEXT -->
+<section class="ctx">
+  <div class="tag t-1"><b>01</b>Problem Statement</div>
+  <h2 class="title">New power plants now wait years in grid "interconnection queues", the main bottleneck for new U.S. electricity supply</h2>
+  <div class="body"><div class="cols" style="grid-template-columns:1fr 1.05fr">
+    <div>
+      <div class="sub">How a new solar farm gets onto the grid</div>
+      <div class="step"><b>1 · Request.</b> The developer asks the grid operator to connect, and joins the queue</div>
+      <div class="arrow">▼</div>
+      <div class="step"><b>2 · Study.</b> The operator (PJM) studies the grid impact and bills the project for any new lines or transformers it needs (<b>"network upgrades"</b>)</div>
+      <div class="arrow">▼</div>
+      <div class="step bad"><b>3 · Build or quit.</b> The developer only learns that bill <i>after</i> years in line, and many projects withdraw</div>
+      <div class="note" style="margin-top:8px;font-size:15px"><b>PJM</b> runs the grid for 13 states + DC (~65M people), the largest U.S. power market</div>
+    </div>
+    <div>
+      <div class="sub">Scale today</div>
+      <div class="kpi"><b>~2,000 GW</b><span>waiting in U.S. queues, more than the entire existing U.S. power fleet; 89% is solar, storage or wind</span></div>
+      <div class="kpi"><b>5.4 yrs</b><span>median wait from request to operation in PJM (projects online 2021–24), up from 2.6 yrs in 2011–15</span></div>
+      <div class="kpi"><b>~1 in 5</b><span>U.S. requests (filed 2000–2019) ever got built</span></div>
+    </div>
+  </div>
+  <div class="box" style="position:absolute;left:0;right:0;bottom:-6px;font-size:19px;border-left:5px solid var(--teal);border-radius:0 8px 8px 0"><b>Why my tool helps:</b> it gives developers a free, data-backed read on upgrade-cost risk <i>before</i> they file, so fewer doomed projects clog the queue and slow everyone else down.</div>
+  </div>
+  <div class="src">Sources: Berkeley Lab, <i>Queued Up</i> (data through 2024), author's calculations (active requests, all U.S. queues; PJM operational projects by online year); PJM Interconnection (service territory)</div>
+  <div class="pg">2</div>
+</section>
+
+<!-- 3 PROBLEM -->
 <section>
   <div class="tag t-1"><b>01</b>Problem Statement</div>
   <h2 class="title">Developers use the PJM queue to discover interconnection costs, and 91% of solar and storage requests end up withdrawing</h2>
@@ -87,7 +119,7 @@
     </div>
   </div></div>
   <div class="src">Sources: Berkeley Lab, <i>Queued Up</i> (data through 2024), PJM solar/battery/hybrid requests 2015+; Berkeley Lab, <i>Interconnection Cost Analysis in the PJM Territory</i> (2023), studies 2017+; author's calculations</div>
-  <div class="pg">2</div>
+  <div class="pg">3</div>
 </section>
 
 <!-- 3 WHAT IS NEW -->
@@ -109,7 +141,7 @@
     for free, in seconds, and add the non-grid risks Nira doesn't cover. We are the step before Nira, not a replacement.</div>
   </div>
   <div class="src">Note: ¹Interconnection.fyi, GridStatus; ²A red-to-green rating instead of a dollar quote avoids the liability of a precise but wrong number. Sources: company websites; pv magazine USA; Renewable Energy World (Oct 2026)</div>
-  <div class="pg">3</div>
+  <div class="pg">4</div>
 </section>
 
 <!-- 4 AGENTS -->
@@ -125,7 +157,7 @@
     </div>
   </div>
   <div class="src">Model: gpt-6-luna via Portkey for all agents · Pydantic structured outputs · Data: Berkeley Lab (VA, PA, OH)</div>
-  <div class="pg">4</div>
+  <div class="pg">5</div>
 </section>
 
 <!-- 5 DEMO -->
@@ -136,7 +168,7 @@
     <img class="shot" src="img/detail_c.png" alt="App screenshot" style="max-height:100%;width:auto;margin:0 auto">
   </div>
   <div class="src">Note: Site names from our AES Round 1 deck, placed in real counties (Franklin PA, Sussex VA, Clinton OH). Click any tile for the reason and sources. Flags guide diligence, not final cost estimates</div>
-  <div class="pg">5</div>
+  <div class="pg">6</div>
 </section>
 
 <!-- 6 COST -->
@@ -170,7 +202,7 @@
     </div>
   </div>
   <div class="src">Sources: measured token counts from logs/runs.jsonl and logs/benchmark.json (3 runs per design); gpt-6-luna list price $0.10 / $0.01 cached / $0.50 per 1M tokens</div>
-  <div class="pg">6</div>
+  <div class="pg">7</div>
 </section>
 
 <!-- 7 SAFETY -->
@@ -199,7 +231,7 @@
     </div>
   </div></div>
   <div class="src">Source: tests/test_safety.py; app "Under the hood" verifier log</div>
-  <div class="pg">7</div>
+  <div class="pg">8</div>
 </section>
 
 <!-- 8 IMPACT -->
@@ -228,7 +260,7 @@
     </div>
   </div>
   <div class="src">Sources: measured app timing; Berkeley Lab PJM cost data (VA/PA/OH, studies 2017+)</div>
-  <div class="pg">8</div>
+  <div class="pg">9</div>
 </section>
 
 <!-- 9 NEXT -->
@@ -244,7 +276,7 @@
     </div>
     <div class="box" style="margin-top:34px;font-size:19px"><b>Today's limits:</b> history, not forecasts (studies through 2022, queue through 2024) · county-level, not substation · VA, PA, OH only · route, wetlands and community rely on developer inputs</div>
   </div>
-  <div class="pg">9</div>
+  <div class="pg">10</div>
 </section>
 
 </div></div>
