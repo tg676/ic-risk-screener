@@ -36,10 +36,11 @@ Open **http://127.0.0.1:8050**, click **Load example**, then **Screen sites** (a
 | `agents.py` | Intake agent → Risk Analyst agents (one per site, in parallel, with tools) → Verifier (code) → Portfolio agent |
 | `tools.py` | Deterministic data tools the analyst calls (queue history, upgrade costs, substation crowding, state rules) |
 | `data/` | Compact CSVs built from Berkeley Lab data (VA, PA, OH), curated state siting rules, sample sites |
-| `tests/test_safety.py` | Offline tests of each safety defense (`python -m pytest -q`, no API calls) |
+| `tests/test_safety.py` | Offline tests of each safety defense (`pip install -r requirements-dev.txt`, then `python -m pytest -q`; no API calls) |
 | `scripts/benchmark.py` | Token/cost benchmark: compact vs. raw tool data |
 | `scripts/build_data.py` | Rebuilds `data/*.csv` from the raw Berkeley Lab workbooks |
-| `logs/` | Token usage per run (`runs.jsonl`) and benchmark results |
+| `logs/` | Token usage per run (`runs.jsonl`), benchmark results, saved runs for `?replay=demo` |
+| `report.html`, `slides.html` | Final report and slide deck (self-contained; rebuilt by `report/build.py`) |
 
 ## Data
 

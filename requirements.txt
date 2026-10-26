@@ -4,6 +4,3 @@ pydantic
 pandas
 dash
 plotly
-openpyxl
-pytest
-pillow
