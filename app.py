@@ -193,7 +193,9 @@ def board(r):
     top = html.Div([html.Span("Diligence order: ", className="hint"),
                     *[badge(f"{n + 1}. {name}", PURPLE, solid=n == 0) for n, name in enumerate(port["ranking"])],
                     html.Span(port["headline"], className="headline")], className="portfolio") if len(res) > 1 else None
-    return [top,
+    skipped = html.Div(f"Skipped (outside VA, PA, OH): {', '.join(r['skipped'])}", className="hint",
+                       style={"marginBottom": "10px", "color": "#D6336C"}) if r.get("skipped") else None
+    return [skipped, top,
             html.Div(grid, className="grid", style={"gridTemplateColumns": f"190px repeat({len(res)}, 1fr)"}),
             html.Div(id="detail", className="detail", children=detail_view(r, *r["_open"]) if r.get("_open") else
                      html.Span("Click any tile for the why and the sources.", className="hint")),
