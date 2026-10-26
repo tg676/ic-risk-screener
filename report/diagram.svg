@@ -1,0 +1,60 @@
+<svg viewBox="0 0 960 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6B6B6B"/></marker>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6A2C91"/><stop offset=".35" stop-color="#0072CE"/><stop offset=".65" stop-color="#00A9A5"/><stop offset="1" stop-color="#7AB800"/></linearGradient>
+  </defs>
+  <!-- user -->
+  <rect x="10" y="150" width="120" height="70" rx="10" fill="#F2F2F2"/>
+  <text x="70" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#2B2B2B">Developer</text>
+  <text x="70" y="199" text-anchor="middle" font-size="11" fill="#6B6B6B">1-3 sites, plain text</text>
+  <!-- guard -->
+  <rect x="160" y="150" width="120" height="70" rx="10" fill="white" stroke="#D6336C" stroke-width="2"/>
+  <text x="220" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#D6336C">Guardrails</text>
+  <text x="220" y="194" text-anchor="middle" font-size="11" fill="#6B6B6B">injection filter</text>
+  <text x="220" y="209" text-anchor="middle" font-size="11" fill="#6B6B6B">length + budget cap</text>
+  <!-- intake -->
+  <rect x="310" y="150" width="130" height="70" rx="10" fill="#6A2C91"/>
+  <text x="375" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="white">1 · Intake agent</text>
+  <text x="375" y="197" text-anchor="middle" font-size="11" fill="#E3CEF0">text → SiteSpec JSON</text>
+  <text x="375" y="211" text-anchor="middle" font-size="11" fill="#E3CEF0">flags injections</text>
+  <!-- analysts -->
+  <g>
+    <rect x="480" y="70" width="150" height="56" rx="10" fill="#0072CE"/>
+    <text x="555" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="white">2 · Risk Analyst</text>
+    <text x="555" y="112" text-anchor="middle" font-size="11" fill="#D6E9FA">Site A</text>
+    <rect x="480" y="157" width="150" height="56" rx="10" fill="#0072CE"/>
+    <text x="555" y="182" text-anchor="middle" font-size="13" font-weight="700" fill="white">2 · Risk Analyst</text>
+    <text x="555" y="199" text-anchor="middle" font-size="11" fill="#D6E9FA">Site B</text>
+    <rect x="480" y="244" width="150" height="56" rx="10" fill="#0072CE"/>
+    <text x="555" y="269" text-anchor="middle" font-size="13" font-weight="700" fill="white">2 · Risk Analyst</text>
+    <text x="555" y="286" text-anchor="middle" font-size="11" fill="#D6E9FA">Site C · in parallel</text>
+  </g>
+  <!-- tools -->
+  <rect x="460" y="320" width="190" height="72" rx="10" fill="white" stroke="#0072CE" stroke-dasharray="5 4" stroke-width="1.5"/>
+  <text x="555" y="338" text-anchor="middle" font-size="12" font-weight="700" fill="#0072CE">Data tools (Python, no LLM)</text>
+  <text x="555" y="355" text-anchor="middle" font-size="11" fill="#2B2B2B">queue_history · upgrade_costs</text>
+  <text x="555" y="370" text-anchor="middle" font-size="11" fill="#2B2B2B">poi_crowding · state_rules</text>
+  <text x="555" y="385" text-anchor="middle" font-size="10" fill="#6B6B6B">Berkeley Lab PJM data + statutes</text>
+  <!-- verifier -->
+  <rect x="670" y="150" width="130" height="70" rx="10" fill="white" stroke="#00A9A5" stroke-width="2.5"/>
+  <text x="735" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#00A9A5">3 · Verifier (code)</text>
+  <text x="735" y="194" text-anchor="middle" font-size="11" fill="#6B6B6B">citations must exist</text>
+  <text x="735" y="209" text-anchor="middle" font-size="11" fill="#6B6B6B">no $ quotes · word caps</text>
+  <!-- portfolio -->
+  <rect x="830" y="150" width="120" height="70" rx="10" fill="#7AB800"/>
+  <text x="890" y="178" text-anchor="middle" font-size="13" font-weight="700" fill="white">4 · Portfolio</text>
+  <text x="890" y="196" text-anchor="middle" font-size="11" fill="white">ranks sites,</text>
+  <text x="890" y="210" text-anchor="middle" font-size="11" fill="white">1-line headline</text>
+  <!-- arrows -->
+  <g stroke="#6B6B6B" stroke-width="1.8" fill="none" marker-end="url(#a)">
+    <path d="M130,185 H156"/><path d="M280,185 H306"/>
+    <path d="M440,185 C460,185 460,98 476,98"/><path d="M440,185 H476"/><path d="M440,185 C460,185 460,272 476,272"/>
+    <path d="M630,98 C650,98 650,185 666,185"/><path d="M630,185 H666"/><path d="M630,272 C650,272 650,185 666,185"/>
+    <path d="M800,185 H826"/>
+    <path d="M555,300 V316" /><path d="M540,316 V304" />
+  </g>
+  <text x="890" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#2B2B2B">→ Heatmap UI</text>
+  <text x="890" y="266" text-anchor="middle" font-size="11" fill="#6B6B6B">+ token / cost meters</text>
+  <rect x="10" y="20" width="940" height="5" fill="url(#g)"/>
+  <text x="10" y="50" font-size="12" fill="#6B6B6B">All agents: gpt-6-luna via Portkey · structured outputs (Pydantic) · stable cached system prompts</text>
+</svg>

@@ -1,4 +1,7 @@
 """Dash UI for the IC Risk Screener. Run:  python app.py  ->  http://127.0.0.1:8050"""
+import json
+import re
+
 import plotly.graph_objects as go
 from dash import ALL, Dash, Input, Output, State, ctx, dcc, html, no_update
 
@@ -38,7 +41,7 @@ def legend():
 
 
 app.layout = html.Div([
-    dcc.Store(id="result"), dcc.Store(id="session-tokens", storage_type="session", data=0),
+    dcc.Location(id="url"), dcc.Store(id="result"), dcc.Store(id="session-tokens", storage_type="session", data=0),
     html.Header([
         html.Div([html.Div("IC Risk Screener", className="title"),
                   html.Div("Pre-queue interconnection gut check · PJM solar + storage · Grid Gremlins",
@@ -64,15 +67,28 @@ app.layout = html.Div([
 ])
 
 
-@app.callback(Output("sites", "value"), Input("example", "n_clicks"), prevent_initial_call=True)
-def load_example(_):
-    return SAMPLE
+def replay(search):
+    """?replay=<name> shows a saved real run from logs/replay_<name>.json (used for report screenshots)."""
+    m = re.search(r"replay=(\w+)", search or "")
+    f = config.LOGS / f"replay_{m.group(1)}.json" if m else None
+    return json.loads(f.read_text(encoding="utf-8")) if f and f.exists() else None
+
+
+@app.callback(Output("sites", "value"), Input("example", "n_clicks"), Input("url", "search"))
+def load_example(_, search):
+    if ctx.triggered_id == "example":
+        return SAMPLE
+    rp = replay(search)
+    return rp["text"] if rp else no_update
 
 
 @app.callback(Output("result", "data"), Output("session-tokens", "data"),
-              Input("go", "n_clicks"), State("sites", "value"), State("session-tokens", "data"),
-              prevent_initial_call=True)
-def run(_, text, used):
+              Input("go", "n_clicks"), Input("url", "search"), State("sites", "value"),
+              State("session-tokens", "data"))
+def run(_, search, text, used):
+    if ctx.triggered_id != "go":
+        rp = replay(search)
+        return (rp["result"], used or 0) if rp else (no_update, no_update)
     try:
         r = screen(text, used or 0)
     except Exception as e:  # network / model failure: show it, don't crash the app
@@ -142,7 +158,7 @@ def under_hood(r):
                                             ("Agent", "Site", "Input", "Cached", "Output", "Time", "Cost")])),
                         html.Tbody(rows)], className="usage")
     ver = [html.Li(v) for v in r.get("verifier", [])] or [html.Li("No corrections needed.")]
-    return html.Details([html.Summary(f"Under the hood · {len(rows)} model calls · {r.get('secs', 0)}s"),
+    return html.Details(open=bool(r.get("_hood_open")), children=[html.Summary(f"Under the hood · {len(rows)} model calls · {r.get('secs', 0)}s"),
                          html.Div([html.Div([html.H4("Token usage"), table]),
                                    html.Div([html.H4("🛡 Verifier actions"), html.Ul(ver)])], className="hood")],
                         className="details")
@@ -179,8 +195,8 @@ def board(r):
                     html.Span(port["headline"], className="headline")], className="portfolio") if len(res) > 1 else None
     return [top,
             html.Div(grid, className="grid", style={"gridTemplateColumns": f"190px repeat({len(res)}, 1fr)"}),
-            html.Div(id="detail", className="detail", children=html.Span("Click any tile for the why and the sources.",
-                                                                         className="hint")),
+            html.Div(id="detail", className="detail", children=detail_view(r, *r["_open"]) if r.get("_open") else
+                     html.Span("Click any tile for the why and the sources.", className="hint")),
             charts(res), under_hood(r)]
 
 
@@ -189,7 +205,10 @@ def board(r):
 def detail(clicks, r):
     if not ctx.triggered_id or not any(clicks):
         return no_update
-    i, k = ctx.triggered_id["site"], ctx.triggered_id["driver"]
+    return detail_view(r, ctx.triggered_id["site"], ctx.triggered_id["driver"])
+
+
+def detail_view(r, i, k):
     x = r["results"][i]
     d = next(d for d in x["card"]["drivers"] if d["driver"] == k)
     bg, edge, word = RATING[d["rating"]]

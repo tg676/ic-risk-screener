@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #2B2B2B; background: #F7F7F7; }
 header { display: flex; justify-content: space-between; align-items: center; padding: 14px 28px;
-  background: white; border-bottom: 4px solid #6A2C91; }
+  background: white; border-bottom: 4px solid; border-image: linear-gradient(90deg,#6A2C91,#0072CE 35%,#00A9A5 65%,#7AB800) 1; }
 .title { font-size: 24px; font-weight: 700; color: #6A2C91; }
 .subtitle { font-size: 13px; color: #6B6B6B; margin-top: 2px; }
 .meters { display: flex; gap: 10px; }
