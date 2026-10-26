@@ -353,7 +353,7 @@ tests/test_safety.py::test_verifier_removes_invented_citation_and_downgrades PAS
 tests/test_safety.py::test_verifier_strips_dollar_quotes PASSED          [ 71%]
 tests/test_safety.py::test_verifier_fills_missing_drivers_and_fixes_verdict PASSED [ 85%]
 tests/test_safety.py::test_analyst_tool_loop_is_capped PASSED            [100%]
-============================== 7 passed in 2.71s ==============================</pre>
+============================== 7 passed in 3.12s ==============================</pre>
 <p class="note">Tests: injection blocked before any model call; session budget refuses runs; oversized input rejected; an invented citation
 is removed and the flag downgraded; "$641/kW" and "$45M" are stripped; missing drivers are filled and an inconsistent
 verdict corrected; a model stuck calling tools is stopped after exactly 6 rounds.</p>
@@ -365,7 +365,7 @@ verdict corrected; a model stuck calling tools is stopped after exactly 6 rounds
 manual equivalent means pulling a county's queue history from PJM or Berkeley Lab spreadsheets, finding comparable
 interconnection studies and their upgrade costs, checking substation crowding, and reading the local siting regime.
 Our team's estimate, from our experience preparing the AES case, is that a desk screen of one site takes about <b>3 hours</b>, roughly a full morning. Screening our three example sites by hand would take about <b>9 analyst-hours</b>, against about 2 minutes with the app (typing plus a 20-second run). That is roughly a <b>99% reduction in first-pass screening time</b>. The app does not replace full diligence. It decides which sites get it. For an analyst screening 60 candidate sites a month, that is about 180 hours of desk research. If the screen moves the clearly deprioritized third of sites off the list early, about 60 of those hours go back to sites that deserve them.</p>
-<div class="todo"><b>TO FILL:</b> real user test: who, quote, before/after time</div>
+<div class="callout"><b>User testing: pilot planned with AES contact (October 27, 2026).</b> No outside user has tried the app yet. Our team's next meeting with our AES Energy Innovation Challenge contact is the day after this submission, so the time savings above rest on our team's estimate, not a measured user test. The pilot plan: the AES contact screens 2–3 real pre-queue candidate sites in the app, we time it against their usual desk screen, and we record whether each rating matches their own judgment. That gives a before/after time and a first accuracy check against an expert's view.</div>
 <h3>Money and reach</h3>
 <ul>
 <li><b>Avoided filings.</b> If the screen moves even one doomed project per developer per year out of the queue before
