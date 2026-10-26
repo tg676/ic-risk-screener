@@ -245,7 +245,7 @@ def screen(text: str, session_tokens: int = 0) -> dict:
     for s in spec.sites[: config.MAX_SITES]:
         s.state, s.county = s.state.upper().strip(), norm_county(s.county)
         sites.append(s)
-    skipped = [s.name for s in sites if s.state not in STATES]
+    skipped = [{"name": s.name, "state": s.state, "county": s.county} for s in sites if s.state not in STATES]
     sites = [s for s in sites if s.state in STATES]
     if not sites:
         return {"blocked": spec.problem or f"No sites in covered states ({', '.join(STATES)}).",

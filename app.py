@@ -105,10 +105,12 @@ def meters(r, used):
         html.Div([html.B(f"{t['input'] + t['output']:,}"), " tokens"], className="meter",
                  title=f"input {t['input']:,} (cached {t['cached']:,}) · output {t['output']:,} · {t['calls']} calls"),
         html.Div([html.B(f"${t['cost']:.4f}"), " this run"], className="meter"),
-        html.Div([html.B(f"{caught}"), " 🛡 caught"], className="meter",
-                 title="Verifier + injection guard actions this run"),
-        html.Div([html.B(f"{100 * used / config.SESSION_TOKEN_BUDGET:.0f}%"), " budget"], className="meter",
-                 title=f"Session cap {config.SESSION_TOKEN_BUDGET:,} tokens"),
+        html.Div([html.B(f"{caught}"), " safety fixes"], className="meter",
+                 title="Safety fixes this run: unsupported citations removed, dollar figures stripped, or prompt "
+                       "injections blocked. Details under 'Under the hood'."),
+        html.Div([html.B(f"{100 * used / config.SESSION_TOKEN_BUDGET:.0f}%"), " of session budget"], className="meter",
+                 title=f"Share of this browser session's {config.SESSION_TOKEN_BUDGET:,}-token cap used so far. "
+                       "At 100% the app stops running new screens (protects against runaway spend)."),
     ]
 
 
@@ -133,18 +135,26 @@ def charts(results):
                             text=[f"{ordinal(pct)} · {n} {'study' if n == 1 else 'studies'}" if n else "no studies"], textposition="auto",
                             hovertemplate=f"{s['county']}, {s['state']}: county median sits at the %{{x}}th "
                                           f"percentile of PJM solar/storage studies<extra></extra>"))
+        wd, res_n = cd["wd_n"]
         f2.add_trace(go.Bar(y=[s["name"]], x=[cd["county_wd"] or 0], orientation="h", marker_color=PURPLE,
-                            name=s["name"], text=[f"{(cd['county_wd'] or 0):.0%}"], textposition="inside"))
+                            name=s["name"], text=[f"{(cd['county_wd'] or 0):.0%} · {wd} of {res_n} withdrew"
+                                                  if res_n else "no resolved requests"],
+                            textposition="inside", insidetextanchor="start",
+                            hovertemplate=f"{s['county']}, {s['state']}: {wd} of {res_n} solar/storage requests that "
+                                          f"reached an outcome since 2015 withdrew (still-active requests excluded)"
+                                          f"<extra></extra>"))
         f2.add_trace(go.Scatter(y=[s["name"]], x=[cd["state_wd"]], mode="markers", marker=dict(symbol="line-ns-open",
                                 size=26, color=INK, line_width=3), name=f"{s['state']} average",
                                 hovertemplate=f"{s['state']} average %{{x:.0%}}<extra></extra>"))
-    for f, title in ((f1, "Upgrade cost level: percentile vs. PJM history"),
-                     (f2, "Withdrawal rate: county (bar) vs. state (|)")):
-        f.update_layout(title=dict(text=title, font_size=14, x=0), height=200, margin=dict(l=10, r=10, t=36, b=24),
+    for f, title in ((f1, "Upgrade cost level vs. PJM studies, 2017–2022<br><sup>County median network-upgrade "
+                          "cost as a percentile of 582 solar/storage studies (VA, PA, OH)</sup>"),
+                     (f2, "Withdrawal rate since 2015: county (bar) vs. state avg (|)<br><sup>Share of solar/storage "
+                          "requests that withdrew instead of being built; active requests excluded</sup>")):
+        f.update_layout(title=dict(text=title, font_size=14, x=0), height=230, margin=dict(l=10, r=10, t=56, b=24),
                         showlegend=False, plot_bgcolor="white", paper_bgcolor="white", font_family="Arial")
     f1.add_vline(x=50, line_dash="dot", line_color=GREY, annotation_text="PJM median", annotation_font_size=10)
     f1.update_xaxes(range=[0, 100], ticksuffix="th", showgrid=False)
-    f2.update_xaxes(tickformat=".0%", range=[0, 1], showgrid=False)
+    f2.update_xaxes(tickformat=".0%", range=[0, 1.04], tickvals=[0, .25, .5, .75, 1], showgrid=False)
     cfg = {"displayModeBar": False}
     return html.Div([dcc.Graph(figure=f1, config=cfg, className="chart"),
                      dcc.Graph(figure=f2, config=cfg, className="chart")], className="charts")
@@ -182,21 +192,26 @@ def board(r):
         head.append(html.Div([html.Div(s["name"], className="site-name"),
                               html.Div(f"{s['county']}, {s['state']} · {mw}", className="site-meta"),
                               badge(word, col)], className="site-head"))
+    skipped = [s if isinstance(s, dict) else {"name": s, "state": "?", "county": "?"} for s in r.get("skipped", [])]
+    for s in skipped:
+        head.append(html.Div([html.Div(s["name"], className="site-name"),
+                              html.Div(f"{s['county']}, {s['state']} · outside coverage", className="site-meta"),
+                              badge("Out of coverage", "#9E9E9E")], className="site-head off"))
     grid = head
     for k in DRIVERS:
         icon, name = DRIVER_NAME[k]
         grid.append(html.Div([html.Span(icon, className="icon"), name], className="driver"))
         for i, x in enumerate(res):
             grid.append(tile(i, next(d for d in x["card"]["drivers"] if d["driver"] == k)))
+        grid += [html.Div("Not covered", className="tile off") for _ in skipped]
     grid.append(html.Div("Next step", className="driver"))
     grid += [html.Div("→ " + x["card"]["next_action"], className="next") for x in res]
+    grid += [html.Div("Not screened: data covers VA, PA, OH only", className="next off") for _ in skipped]
     top = html.Div([html.Span("Diligence order: ", className="hint"),
                     *[badge(f"{n + 1}. {name}", PURPLE, solid=n == 0) for n, name in enumerate(port["ranking"])],
                     html.Span(port["headline"], className="headline")], className="portfolio") if len(res) > 1 else None
-    skipped = html.Div(f"Skipped (outside VA, PA, OH): {', '.join(r['skipped'])}", className="hint",
-                       style={"marginBottom": "10px", "color": "#D6336C"}) if r.get("skipped") else None
-    return [skipped, top,
-            html.Div(grid, className="grid", style={"gridTemplateColumns": f"190px repeat({len(res)}, 1fr)"}),
+    return [top,
+            html.Div(grid, className="grid", style={"gridTemplateColumns": f"190px repeat({len(res) + len(skipped)}, 1fr)"}),
             html.Div(id="detail", className="detail", children=detail_view(r, *r["_open"]) if r.get("_open") else
                      html.Span("Click any tile for the why and the sources.", className="hint")),
             charts(res), under_hood(r)]

@@ -60,3 +60,7 @@ main { display: grid; grid-template-columns: 330px 1fr; gap: 20px; padding: 20px
   header { flex-wrap: wrap; gap: 10px; }
 }
 .hood ul { margin: 0; padding-left: 18px; font-size: 12px; color: #6B6B6B; }
+.tile.off { background: white; border: 1.5px dashed #CFCFCF; color: #9E9E9E; cursor: default; font-weight: 400; }
+.tile.off:hover { transform: none; box-shadow: none; }
+.next.off { color: #9E9E9E; font-weight: 400; }
+.site-head.off .site-name { color: #9E9E9E; }

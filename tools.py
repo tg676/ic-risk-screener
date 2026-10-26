@@ -119,6 +119,7 @@ def chart_data(state: str, county: str) -> dict:
     state, county = state.upper(), norm_county(county)
     d = C[(C.state == state) & (C.county == county)].network_kw.tolist()
     qh = queue_history(state, county)
+    resolved = qh.get("withdrawn", 0) + qh.get("operational", 0)
     pct = round(float((C.network_kw < pd.Series(d).median()).mean() * 100)) if d else None
     return {"pct": pct, "county": d,
-            "county_wd": qh.get("county_withdrawal_rate"), "state_wd": _wd_rate(Q[Q.state == state])}
+            "county_wd": qh.get("county_withdrawal_rate"), "wd_n": (qh.get("withdrawn", 0), resolved), "state_wd": _wd_rate(Q[Q.state == state])}
