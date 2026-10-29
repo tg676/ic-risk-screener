@@ -28,6 +28,14 @@ Open **http://127.0.0.1:8050**, click **Load example**, then **Screen sites** (a
 
 **API key.** The app reads `PORTKEY_API_KEY` from a `.env` file. It looks in the repo folder first, then **one folder up**. See `.env.example`. It uses only `gpt-6-luna` via Portkey.
 
+## Auditing a rating
+
+Every tile shows the numbers that decided its color. Clicking a tile opens an audit panel with three parts:
+
+- **The AI's reasoning** and the source records it cited.
+- **A rubric check.** The same written thresholds the AI analyst is given are re-applied in plain code (`audit.py`) to the exact data the analyst saw. The panel shows which rule triggered and whether the AI's color matches. Any difference is flagged **AI judgment** on the tile. A banner above the grid shows how many ratings match the rules.
+- **The underlying Berkeley Lab records** for that county: interconnection studies, active queue requests by substation, or outcome history. They can be sorted and downloaded as CSV.
+
 ## What's inside
 
 | File | What it does |
@@ -35,8 +43,9 @@ Open **http://127.0.0.1:8050**, click **Load example**, then **Screen sites** (a
 | `app.py` | Dash dashboard: heatmap, source drill-down, charts, token/cost meters |
 | `agents.py` | Intake agent → Risk Analyst agents (one per site, in parallel, with tools) → Verifier (code) → Portfolio agent |
 | `tools.py` | Deterministic data tools the analyst calls (queue history, upgrade costs, substation crowding, state rules) |
+| `audit.py` | Re-checks every rating against the written rubric and returns the underlying records for the audit panel |
 | `data/` | Compact CSVs built from Berkeley Lab data (VA, PA, OH), curated state siting rules, sample sites |
-| `tests/test_safety.py` | Offline tests of each safety defense (`pip install -r requirements-dev.txt`, then `python -m pytest -q`; no API calls) |
+| `tests/` | Offline tests of each safety defense and of the audit rubric (`pip install -r requirements-dev.txt`, then `python -m pytest -q`; no API calls) |
 | `scripts/benchmark.py` | Token/cost benchmark: compact vs. raw tool data |
 | `scripts/build_data.py` | Rebuilds `data/*.csv` from the raw Berkeley Lab workbooks |
 | `logs/` | Token usage per run (`runs.jsonl`), benchmark results, saved runs for `?replay=demo` |

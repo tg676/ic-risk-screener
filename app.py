@@ -3,10 +3,11 @@ import json
 import re
 
 import plotly.graph_objects as go
-from dash import ALL, Dash, Input, Output, State, ctx, dcc, html, no_update
+from dash import ALL, Dash, Input, Output, State, ctx, dash_table, dcc, html, no_update
 
 import config
 from agents import DRIVERS, screen
+from audit import LABEL, audit, records
 from tools import chart_data
 
 PURPLE, BLUE, TEAL, GREEN, INK, GREY = "#6A2C91", "#0072CE", "#00A9A5", "#7AB800", "#2B2B2B", "#6B6B6B"
@@ -42,6 +43,7 @@ def legend():
 
 app.layout = html.Div([
     dcc.Location(id="url"), dcc.Store(id="result"), dcc.Store(id="session-tokens", storage_type="session", data=0),
+    dcc.Store(id="sel"), dcc.Download(id="dl"),
     html.Header([
         html.Div([html.Div("IC Risk Screener", className="title"),
                   html.Div("Pre-queue interconnection gut check · PJM solar + storage",
@@ -60,9 +62,13 @@ app.layout = html.Div([
                      className="hint small"),
             html.H4("Legend"), legend(),
         ], className="panel left"),
-        html.Section(dcc.Loading(html.Div(id="board", children=html.Div(
+        html.Section([html.Div([
+            dcc.Checklist(id="show-nums", options=[{"label": " Show the numbers behind each rating", "value": "on"}],
+                          value=["on"], className="toggle"),
+            html.Span("Click any tile for the rubric check and the underlying records", className="hint")],
+            className="toolbar"), dcc.Loading(html.Div(id="board", children=html.Div(
             [html.Div("⚡", className="empty-icon"), html.Div("Enter sites and press Screen sites")],
-            className="empty")), type="dot", color=PURPLE), className="panel right"),
+            className="empty")), type="dot", color=PURPLE)], className="panel right"),
     ]),
 ])
 
@@ -114,9 +120,16 @@ def meters(r, used):
     ]
 
 
-def tile(i, d):
+def tile(i, d, a=None, nums=True):
     bg, edge, _ = RATING[d["rating"]]
-    return html.Button(d["label"], id={"type": "tile", "site": i, "driver": d["driver"]}, className="tile",
+    body = [html.Div(d["label"])]
+    if nums and a:
+        body.append(html.Div(a["key"], className="tile-sub"))
+    if a and not a["agrees"]:
+        body.append(html.Span("AI judgment", className="flag", title=f"The written rubric gives "
+                              f"{LABEL[a['rule_rating']]}; the AI analyst chose {LABEL[a['ai_rating']]}. "
+                              "Click to see why."))
+    return html.Button(body, id={"type": "tile", "site": i, "driver": d["driver"]}, className="tile",
                        style={"background": bg, "borderLeft": f"5px solid {edge}"}, title=d["reason"])
 
 
@@ -174,8 +187,9 @@ def under_hood(r):
                         className="details")
 
 
-@app.callback(Output("board", "children"), Input("result", "data"), prevent_initial_call=True)
-def board(r):
+@app.callback(Output("board", "children"), Input("result", "data"), Input("show-nums", "value"),
+              prevent_initial_call=True)
+def board(r, nums):
     if not r:
         return no_update
     if r.get("blocked"):
@@ -184,6 +198,9 @@ def board(r):
                         className="empty blocked")
     res = r["results"]
     port = r["portfolio"]
+    audits = [audit(x) for x in res]
+    agree = sum(v["agrees"] for a in audits for v in a.values())
+    total = sum(len(a) for a in audits)
     head = [html.Div(className="corner")]
     for x in res:
         s, c = x["site"], x["card"]
@@ -202,7 +219,7 @@ def board(r):
         icon, name = DRIVER_NAME[k]
         grid.append(html.Div([html.Span(icon, className="icon"), name], className="driver"))
         for i, x in enumerate(res):
-            grid.append(tile(i, next(d for d in x["card"]["drivers"] if d["driver"] == k)))
+            grid.append(tile(i, next(d for d in x["card"]["drivers"] if d["driver"] == k), audits[i][k], bool(nums)))
         grid += [html.Div("Not covered", className="tile off") for _ in skipped]
     grid.append(html.Div("Next step", className="driver"))
     grid += [html.Div("→ " + x["card"]["next_action"], className="next") for x in res]
@@ -210,19 +227,34 @@ def board(r):
     top = html.Div([html.Span("Diligence order: ", className="hint"),
                     *[badge(f"{n + 1}. {name}", PURPLE, solid=n == 0) for n, name in enumerate(port["ranking"])],
                     html.Span(port["headline"], className="headline")], className="portfolio") if len(res) > 1 else None
-    return [top,
+    check = html.Div([html.B(f"Rubric check: {agree} of {total} ratings match the written rules. "),
+                      "Each color is re-checked in code against the same thresholds the AI was given; any "
+                      "difference is flagged \"AI judgment\" on the tile."], className="rubric-banner")
+    return [top, check,
             html.Div(grid, className="grid", style={"gridTemplateColumns": f"190px repeat({len(res) + len(skipped)}, 1fr)"}),
             html.Div(id="detail", className="detail", children=detail_view(r, *r["_open"]) if r.get("_open") else
-                     html.Span("Click any tile for the why and the sources.", className="hint")),
+                     html.Span("Click any tile for the AI's reasoning, the rubric check, and the underlying records.",
+                               className="hint")),
             charts(res), under_hood(r)]
 
 
-@app.callback(Output("detail", "children"), Input({"type": "tile", "site": ALL, "driver": ALL}, "n_clicks"),
+@app.callback(Output("detail", "children"), Output("sel", "data"),
+              Input({"type": "tile", "site": ALL, "driver": ALL}, "n_clicks"),
               State("result", "data"), prevent_initial_call=True)
 def detail(clicks, r):
-    if not ctx.triggered_id or not any(clicks):
+    if not ctx.triggered_id or not any(c for c in clicks if c):
+        return no_update, no_update
+    i, k = ctx.triggered_id["site"], ctx.triggered_id["driver"]
+    return detail_view(r, i, k), {"site": r["results"][i]["site"], "driver": k}
+
+
+@app.callback(Output("dl", "data"), Input("dl-btn", "n_clicks"), State("sel", "data"), prevent_initial_call=True)
+def download(n, sel):
+    if not n or not sel:
         return no_update
-    return detail_view(r, ctx.triggered_id["site"], ctx.triggered_id["driver"])
+    _, df = records(sel["site"], sel["driver"])
+    name = f"{sel['site']['name']}_{sel['driver']}".replace(" ", "_")
+    return dcc.send_data_frame(df.to_csv, f"{name}_records.csv", index=False)
 
 
 def detail_view(r, i, k):
@@ -231,9 +263,33 @@ def detail_view(r, i, k):
     bg, edge, word = RATING[d["rating"]]
     chips = [html.Span([html.B(SOURCE.get(c.split(":")[0], c)), f" · {c.split(':', 1)[1]}"], className="chip")
              for c in d["cites"]] or [html.Span("No source: rated Uncertain", className="chip")]
-    return html.Div([html.Span(className="swatch big", style={"background": bg, "borderColor": edge}),
+    a = audit(x)[k]
+    head = html.Div([html.Span(className="swatch big", style={"background": bg, "borderColor": edge}),
                      html.Div([html.B(f"{x['site']['name']} · {DRIVER_NAME[k][1]} · {word}"),
-                               html.Div(d["reason"]), html.Div(chips, className="chips")])], className="detail-row")
+                               html.Div(["AI reasoning: ", html.I(d["reason"])]),
+                               html.Div(chips, className="chips")])], className="detail-row")
+    rows = [html.Tr([html.Td(c["metric"]), html.Td(html.B(str(c["value"]))), html.Td(c["rule"]),
+                     html.Td("◀ triggered" if c["hit"] else "", className="hit")]) for c in a["checks"]]
+    verdict = (html.Div(["✔ Rubric gives ", html.B(LABEL[a["rule_rating"]]), "; the AI agrees."], className="ok")
+               if a["agrees"] else
+               html.Div(["⚑ Rubric gives ", html.B(LABEL[a["rule_rating"]]), "; the AI chose ", html.B(word),
+                         ". The AI reasoning above explains the judgment call. Treat this tile with extra care."],
+                        className="warn"))
+    rubric = html.Div([html.H4("Rubric check"),
+                       html.Table([html.Thead(html.Tr([html.Th(h) for h in ("What was checked", "Value", "Rule", "")])),
+                                   html.Tbody(rows)], className="usage rubric"), verdict], className="audit-col")
+    title, df = records(x["site"], k)
+    table = dash_table.DataTable(
+        data=df.to_dict("records"), columns=[{"name": c, "id": c} for c in df.columns], page_size=8,
+        sort_action="native", style_table={"overflowX": "auto"},
+        style_cell={"fontFamily": "Arial", "fontSize": 12, "padding": "4px 8px", "textAlign": "left",
+                    "whiteSpace": "normal", "height": "auto", "maxWidth": 320},
+        style_header={"backgroundColor": INK, "color": "white", "fontWeight": "bold"},
+        style_data_conditional=[{"if": {"row_index": "odd"}, "backgroundColor": "#FAFAFA"}])
+    recs = html.Div([html.Div([html.H4(f"Underlying records · {len(df)} {'row' if len(df) == 1 else 'rows'}"),
+                               html.Button("Download CSV", id="dl-btn", className="btn ghost small")],
+                              className="rec-head"), html.Div(title, className="hint"), table], className="audit-col")
+    return html.Div([head, html.Div([rubric, recs], className="audit")])
 
 
 if __name__ == "__main__":
