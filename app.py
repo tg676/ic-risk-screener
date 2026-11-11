@@ -293,4 +293,10 @@ def detail_view(r, i, k):
 
 
 if __name__ == "__main__":
+    import sys
+    import threading
+    import webbrowser
+
+    if "--open" in sys.argv:  # used by start.bat / start.command
+        threading.Timer(2, webbrowser.open, ["http://127.0.0.1:8050"]).start()
     app.run(debug=False, port=8050)  # debug off: no auto-reloader, one process

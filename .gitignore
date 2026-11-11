@@ -5,3 +5,4 @@ data/raw/
 *.pyc
 report/_check.pdf
 sample.txt
+*.pptx

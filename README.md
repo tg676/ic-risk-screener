@@ -4,9 +4,16 @@ A pre-queue "gut check" for PJM solar + storage sites. Describe up to 3 candidat
 
 > Ratings guide diligence. They are **not** cost estimates and do not replace PJM studies or engineering review.
 
-## Run it (about 3 minutes)
+## Run it
 
-Requires Python 3.11+.
+**Easiest (one click).** Install [Python 3.11+](https://www.python.org/downloads/) (on Windows, tick "Add python.exe to PATH"), download this repo, then:
+
+- **Windows:** double-click `start.bat`
+- **Mac:** right-click `start.command` → Open (the first time only; after that, double-click)
+
+The first run installs everything (3–5 minutes) and asks for your Portkey API key once. After that it starts in seconds and opens **http://127.0.0.1:8050** in your browser. Keep the window open while you use the app; close it to stop.
+
+**Manual (any OS).**
 
 ```bash
 git clone https://github.com/tg676/ic-risk-screener.git
@@ -16,7 +23,7 @@ python -m venv .venv
 
 Activate the virtual environment:
 
-- Windows: `.venv\Scripts\activate`
+- Windows: `.venv\Scriptsctivate`
 - macOS / Linux: `source .venv/bin/activate`
 
 ```bash
@@ -26,7 +33,7 @@ python app.py
 
 Open **http://127.0.0.1:8050**, click **Load example**, then **Screen sites** (about 20 seconds).
 
-**API key.** The app reads `PORTKEY_API_KEY` from a `.env` file. It looks in the repo folder first, then **one folder up**. See `.env.example`. It uses only `gpt-6-luna` via Portkey.
+**API key.** The app reads `PORTKEY_API_KEY` from a `.env` file. It looks in the repo folder first, then **one folder up**. See `.env.example`. It uses only `gpt-6-luna` via Portkey. Never commit your `.env`.
 
 ## Auditing a rating
 
