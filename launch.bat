@@ -40,7 +40,7 @@ exit /b 0
 
 :fail
 echo.
-echo Setup failed. Check your internet connection and run start.bat again.
+echo Setup failed. Check your internet connection and run launch.bat again.
 if exist ".venv\installed.ok" del ".venv\installed.ok"
 pause
 exit /b 1

@@ -8,8 +8,8 @@ A pre-queue "gut check" for PJM solar + storage sites. Describe up to 3 candidat
 
 **Easiest (one click).** Install [Python 3.11+](https://www.python.org/downloads/) (on Windows, tick "Add python.exe to PATH"), download this repo, then:
 
-- **Windows:** double-click `start.bat`
-- **Mac:** right-click `start.command` → Open (the first time only; after that, double-click)
+- **Windows:** double-click `launch.bat`
+- **Mac:** right-click `launch.command` → Open (the first time only; after that, double-click)
 
 The first run installs everything (3–5 minutes) and asks for your Portkey API key once. After that it starts in seconds and opens **http://127.0.0.1:8050** in your browser. Keep the window open while you use the app; close it to stop.
 
